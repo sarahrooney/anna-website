@@ -56,10 +56,10 @@ section{
 	margin-left: 40px;
 	margin-right: 40px;
 	font-family: Changa One, sans-serif;
+	color: #E8DBD2;
 	font-size: 21pt;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	color: #E8DBD2;
 	/* line text */
   	text-shadow:
    	-1px -1px 0 #F05559,  
@@ -87,14 +87,25 @@ section{
 }
 
 #blurb > p{
-	width:1050px;
+	width:1080px;
 	font-family: Vesper Libre, serif;
+	color: #000;
 	font-size: 25pt;
 	text-transform: uppercase;
 	letter-spacing: 4px;
 	line-height: 42px;
 	font-weight: lighter;
 	padding-top: 20px;
+}
+
+#collab{
+	margin-left: 15%;
+	font-family: Changa One, sans-serif;
+	color: #F05559;
+	font-size: 46pt;
+	text-transform: uppercase;
+	letter-spacing: 9px;
+	line-height: 70px;
 }
 
 /*
