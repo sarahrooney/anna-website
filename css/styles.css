@@ -69,11 +69,15 @@ section{
 }
 
 
-/*-----------------------LOGO */
+/*----------------LOGO & ICONS */
 
 #facelogo{
 	position: absolute;
 	padding: 10px;
+}
+
+#flowericon{
+	margin-left: 15%;
 }
 
 
