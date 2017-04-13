@@ -80,6 +80,11 @@ section{
 	margin-left: 15%;
 }
 
+#scrolldown{
+	display: block;
+	margin-left: 50%;
+}
+
 
 /*-------------SPLASH CONTENT */
 
@@ -119,6 +124,14 @@ section{
 	text-transform: uppercase;
 	letter-spacing: 9px;
 	line-height: 70px;
+}
+
+#blueline{
+	background-color: #1C2EAA;
+	width: 285px;
+	height: 8px;
+	margin-top:-168px;
+	margin-left: 29.5%;
 }
 
 #splashphoto{
