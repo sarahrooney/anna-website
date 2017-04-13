@@ -63,6 +63,57 @@ section{
 }
 
 
+/*-------------------CONTENT */
+
+#content{
+	display: flex;
+	margin-top: 100px;
+}
+
+#intro{
+	width: 100%;
+}
+
+#hi{
+	font-family: Changa One, sans-serif;
+	font-size: 67.9pt;
+	color: #000;
+	text-transform: uppercase;
+	margin-top: ;
+	margin-left: ;
+}
+
+#name{
+	font-family: Changa One, sans-serif;
+	font-size: 39.1pt;
+	color: #E8DBD2;
+	text-transform: uppercase;
+	/* line text */
+  	text-shadow:
+   	-1px -1px 0 #F05559,  
+    1px -1px 0 #F05559,
+    -1px 1px 0 #F05559,
+    1px 1px 0 #F05559;
+}
+
+#social{
+	margin-top: 70px;
+}
+
+#social > img{
+	display: block;
+	margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
