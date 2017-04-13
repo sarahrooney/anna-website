@@ -27,6 +27,7 @@ canvas{display:inline-block}template{display:none}[hidden]{display:none}
 
 body,html{
 	background:#E8DBD2;
+	overflow-x: hidden;
 }
 
 section{
@@ -74,27 +75,48 @@ section{
 	width: 100%;
 }
 
+#intro > img{
+	margin-left: 10%
+}
+
+/*
 #hi{
 	font-family: Changa One, sans-serif;
 	font-size: 67.9pt;
 	color: #000;
 	text-transform: uppercase;
-	margin-top: ;
-	margin-left: ;
+	margin-top: 0;
+	margin-left: 10%;
 }
 
 #name{
 	font-family: Changa One, sans-serif;
-	font-size: 39.1pt;
+	font-size: 35pt;
+	letter-spacing: 1px;
 	color: #E8DBD2;
-	text-transform: uppercase;
+	text-transform: uppercase; */
 	/* line text */
-  	text-shadow:
+  	/*text-shadow: 
    	-1px -1px 0 #F05559,  
     1px -1px 0 #F05559,
     -1px 1px 0 #F05559,
-    1px 1px 0 #F05559;
+    1px 1px 0 #F05559;*/
+    /* rotate text */
+    /*transform:          rotate(-44deg);
+	-ms-transform:      rotate(-44deg);
+	-moz-transform:     rotate(-44deg);
+	-webkit-transform:  rotate(-44deg);
+	-o-transform:       rotate(-44deg);
+	margin-top: -30%;
+	margin-left: -3%;
 }
+
+#namelogo{
+	margin-top: 23%;
+	margin-left: 22.5%;
+	width: 100%;
+}
+*/
 
 #social{
 	margin-top: 70px;
