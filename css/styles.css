@@ -69,7 +69,15 @@ section{
 }
 
 
-/*-------------------CONTENT */
+/*-----------------------LOGO */
+
+#facelogo{
+	position: absolute;
+	padding: 10px;
+}
+
+
+/*-------------SPLASH CONTENT */
 
 #content{
 	display: flex;
