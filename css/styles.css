@@ -231,11 +231,12 @@ section{
 		#mobilemenu{
 			display: flex;
 			justify-content: flex-end;
+			padding-right: 3%;
+			padding-top: 3%;
 		}
 
 		#mobilemenu > img{
 			display: block; 
-
 		}
 
 		#content{
@@ -243,25 +244,45 @@ section{
 		}
 
 		#intrographic{
-			margin-left: 3%;
+			margin-left: 7%;
 		}
 
 		#blurb > p{
-			margin-left: 3%;
+			margin-left: 7%;
+			font-size: 26pt;
 		}
 
 		#collab{
-			margin-left: 3%;
-			font-size: 51pt;
-			letter-spacing: 14px;
+			margin-left: 7%;
+			font-size: 52pt;
+			letter-spacing: 15px;
 		}
 
 		#blueline{
-			margin-left: 36%;
+			margin-left: 40%;
+			width: 355px;
+		}
+
+		#introphoto{
+			width: 350px;
+			margin-left: 250px;
+		}
+
+		#flowericon{
+			margin-top: 390px;
+			margin-left: 8%;
+		}
+
+		#scrolldown{
+			margin-left: 45%;
 		}
 
 		#facelogo{
 			padding-left: 3%;
+		}
+
+		#social{
+			display: none;
 		}
 
 	}
