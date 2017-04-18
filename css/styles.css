@@ -349,6 +349,72 @@ section{
 	/* if less than 360px */
 	@media (max-width: 360px) {
 
+		section{
+			margin: 20px;
+		}
+
+		#facelogo{
+			padding: 0px;
+		}
+
+		#exit{
+			margin-left: 242px;
+			margin-top: 0px;
+		}
+
+		#content{
+			margin-top: 30px;
+		}
+
+		#intrographic{
+			width: 150px;
+			margin: 0 auto;
+		}
+
+		#namegraphic{
+			width: 130px;
+		}
+
+		#blurb > p{
+			margin-left: 0;
+			margin-top: 10px;
+			width: 320px;
+			font-size: 13pt;
+			letter-spacing: 3px;
+			line-height: 24px;
+		}
+
+		#collab{
+			margin-left: 0px;
+			margin-top: 100px;
+			font-size: 28pt;
+			letter-spacing: 7px;
+			line-height: 37px;
+		}
+
+		#blueline{
+			width: 182px;
+			height: 5px;
+			margin-left: 127px;
+			margin-top: -94px;
+		}
+
+		#introphoto{
+			width: 200px;
+			margin-top: 10px;
+			margin-left: 110px;
+		}
+
+		#flowericon{
+			margin-top: 205px;
+			margin-left: 0px;
+		}
+
+		#scrolldown{
+			margin-left: 40%;
+			margin-top: 0px;
+			padding-bottom: 0px;
+		}
 	}
 
 
