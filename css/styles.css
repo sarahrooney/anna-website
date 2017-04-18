@@ -417,6 +417,59 @@ section{
 		}
 	}
 
+	/* if less than 360px */
+	@media (max-width: 360px) {
+		#expanded {
+			margin-top: 20px;
+			font-size: 24pt;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+
+		#exit{
+			margin-left: 206px;
+			margin-top: 0px;
+		}
+
+		#intrographic{
+			width: 120px;
+			margin: 0 auto;
+		}
+
+		#namegraphic{
+			width: 100px;
+		}
+
+		#blurb > p {
+			width: 280px;
+			margin-top: 5px;
+			font-size: 12pt;
+			letter-spacing: 2px;
+			line-height: 24px;
+		}
+
+		#collab{
+			margin-left: 0px;
+			margin-top: 90px;
+			font-size: 24pt;
+			letter-spacing: 7px;
+			line-height: 37px;
+		}
+
+		#blueline{
+			width: 160px;
+			height: 5px;
+			margin-left: 117px;
+			margin-top: -90px;
+		}
+
+		#introphoto{
+			width: 200px;
+			margin-top: 10px;
+			margin-left: 80px;
+		}
+	}
+
 
 
 
