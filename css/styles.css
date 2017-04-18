@@ -49,7 +49,11 @@ section{
 }
 
 
-/*----------------------MENU */
+/*-------------------------------*/
+/*----------------------HOMEPAGE */
+/*-------------------------------*/
+
+/*---------------------MENU */
 
 #menu{
 	display: flex;
@@ -98,11 +102,11 @@ section{
 	display: block;
 	margin-top: 10px;
 	margin-left: 48%;
-	padding: 5px;
+	padding-bottom: 25px;
 }
 
 
-/*-------------SPLASH CONTENT */
+/*-------------HOMEPAGE CONTENT */
 
 #content{
 	display: flex;
@@ -477,6 +481,73 @@ section{
 			margin-left: 80px;
 		}
 	}
+
+
+
+
+
+
+/*-------------------------------*/
+/*----------------------ABOUT ME */
+/*-------------------------------*/
+
+/*------------------GENERAL */
+
+#aboutme{
+	margin: 0;
+	background-color: #E8E8E0;
+}
+
+
+/*---------------------MENU */
+
+#about_menu{
+	display: flex;
+	justify-content:center;
+	background-color: #E8E8E0;
+}
+
+#about_menu > div{
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-family: Changa One, sans-serif;
+	color: #E8E8E0;
+	font-size: 21pt;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	/* line text */
+  	text-shadow:
+   	-1px -1px 0 #F05559,  
+    1px -1px 0 #F05559,
+    -1px 1px 0 #F05559,
+    1px 1px 0 #F05559;
+}
+
+
+/*----------------LOGO & ICONS */
+
+#about_logo{
+	margin-left: 50px;
+	margin-top: -30px;
+	z-index: 1000;
+}
+
+
+/*-----------------------IMAGE */
+
+#about_photo{
+	background-image: url("../images/CreativeImpactAnnaRussett-2.jpg");
+	background-size: 100%;
+	background-position: 72% 72%;
+	width: 100%;
+	height: 640px;
+}
+
+
+
+
 
 
 
