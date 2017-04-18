@@ -48,6 +48,15 @@ section{
 	src: url('../fonts/vesper_libre/VesperLibre-Regular.ttf');
 }
 
+h1{
+	font-family: Changa One, sans-serif;
+	color: #F05559;
+	font-size: 30pt;
+	text-transform: uppercase;
+	font-weight: lighter;
+	letter-spacing: 19px;
+}
+
 
 /*-------------------------------*/
 /*----------------------HOMEPAGE */
@@ -545,6 +554,12 @@ section{
 	height: 640px;
 }
 
+
+/*---------------------CONTENT */
+
+#about_content{
+
+}
 
 
 
