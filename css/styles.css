@@ -76,6 +76,10 @@ section{
 	display: none;
 }
 
+#mobilemenuexpand {
+	display:none;
+}
+
 
 /*----------------LOGO & ICONS */
 
@@ -167,6 +171,10 @@ section{
 #social > img{
 	display: block;
 	margin-bottom: 40px;
+}
+
+#mobilesocial{
+	display: none;
 }
 
 	/* if less than 1280px */
