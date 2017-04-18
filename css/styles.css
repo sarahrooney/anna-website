@@ -239,6 +239,47 @@ section{
 			display: block; 
 		}
 
+		#mobilemenuexpand{
+			position: absolute;
+			z-index: 1000;
+			background-color: #e8e8e0;
+			width: 100%;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			display: none;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		#expanded {
+			margin-top: 20px;
+			font-family: Changa One, sans-serif;
+			color: #e8e8e0;
+			font-size: 25pt;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			/* line text */
+		  	text-shadow:
+		   	-1px -1px 0 #F05559,  
+		    1px -1px 0 #F05559,
+		    -1px 1px 0 #F05559,
+		    1px 1px 0 #F05559;
+		}
+
+		#sub {
+			margin-top: 12px;
+			font-family: Vesper Libre, serif;
+			color: #000;
+			font-size: 12pt;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+
+		#exit {
+			
+		}
+
 		#content{
 			margin-top: 60px;
 		}
