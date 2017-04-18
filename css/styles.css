@@ -81,12 +81,16 @@ section{
 }
 
 #flowericon{
+	display: block;
+	margin-top: 30px;
 	margin-left: 15%;
 }
 
 #scrolldown{
 	display: block;
+	margin-top: 10px;
 	margin-left: 50%;
+	padding: 5px;
 }
 
 
@@ -132,23 +136,24 @@ section{
 	color: #F05559;
 	font-size: 46pt;
 	text-transform: uppercase;
-	letter-spacing: 9px;
+	letter-spacing: 10px;
 	line-height: 70px;
 }
 
 #blueline{
 	background-color: #1C2EAA;
-	width: 285px;
-	height: 8px;
+	width: 290px;
+	height: 6px;
 	margin-top:-168px;
-	margin-left: 29.5%;
+	margin-left: 30%;
 }
 
 #introphoto{
+	position: absolute;
 	width: 320px;
 	float: right;
-	margin-right: 20%;
-	margin-top: -10%;
+	margin-left: 100px;
+	margin-top: -140px;
 }
 
 #social{
@@ -160,6 +165,63 @@ section{
 	margin-bottom: 40px;
 }
 
+	/* if less than 1280px */
+	@media (max-width: 1280px) {
+		#blueline{
+			margin-left: 32%;
+		}
+	}
+
+	/* if less than 980px */
+	@media (max-width: 980px) {
+
+		#namegraphic{
+			padding: 10px;
+		}
+
+		#blurb > p{
+			display: block;
+			margin-top: 30px;
+			margin-left: 15%;
+		}
+
+		#collab{
+			margin-top: 180px;
+			margin-left: 16%;
+			font-size: 50pt;
+			letter-spacing: 14px;
+		}
+
+		#blueline{
+			margin-top:-172px;
+			margin-left: 42%;
+			width: 335px;
+		}
+
+		#introphoto{
+			float: none;
+			display: block;
+			width: 400px;
+			margin-top: 10px;
+			margin-left: 240px;
+		}
+
+		#flowericon{
+			margin-top: 440px;
+			margin-left: 18%;
+		}
+
+		#scrolldown{
+			margin-top: 50px;
+			margin-left: 48%;
+		}
+
+	}
+
+	/* if less than 800px */
+	@media (max-width: 800px) {
+
+	}
 
 
 
