@@ -72,6 +72,10 @@ section{
     1px 1px 0 #F05559;
 }
 
+#mobilemenu{
+	display: none;
+}
+
 
 /*----------------LOGO & ICONS */
 
@@ -220,6 +224,45 @@ section{
 
 	/* if less than 800px */
 	@media (max-width: 800px) {
+		#menu > div{
+			display: none;
+		}
+
+		#mobilemenu{
+			display: flex;
+			justify-content: flex-end;
+		}
+
+		#mobilemenu > img{
+			display: block; 
+
+		}
+
+		#content{
+			margin-top: 60px;
+		}
+
+		#intrographic{
+			margin-left: 3%;
+		}
+
+		#blurb > p{
+			margin-left: 3%;
+		}
+
+		#collab{
+			margin-left: 3%;
+			font-size: 51pt;
+			letter-spacing: 14px;
+		}
+
+		#blueline{
+			margin-left: 36%;
+		}
+
+		#facelogo{
+			padding-left: 3%;
+		}
 
 	}
 
