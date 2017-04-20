@@ -66,10 +66,10 @@ h1{
 h2 {
 	font-family: Pragati Narrow, serif;
 	color: #1C2EA3;
-	font-size: 14pt;
+	font-size: 13.6pt;
 	font-weight: lighter;
 	letter-spacing: -0.1px;
-	line-height: 26px;
+	line-height: 25px;
 }
 
 h3 {
@@ -238,6 +238,10 @@ p {
 #social > img{
 	display: block;
 	margin-bottom: 40px;
+}
+
+#social > img:nth-last-child(1){
+	margin-top: -5px;
 }
 
 #mobilesocial{
@@ -653,7 +657,7 @@ p {
 }
 
 #abt_column1 {
-    width: 340px;
+    width: 324px;
     margin-right: 5px;
     display: inline-block;
     text-align: justify;
@@ -664,9 +668,8 @@ p {
 }
 
 #abt_column2 {
-	width: 340px;
+	width: 324px;
     margin-left: 10px;
-	margin-top: -50px;
     display: inline-block;
     text-align: justify;
 }
@@ -675,7 +678,7 @@ p {
 	background-color: #1C2EAA;
 	width: 100%;
 	height: 6px;
-	margin-bottom: 50px;
+	margin-bottom: 68px;
 }
 
 
@@ -687,9 +690,17 @@ p {
 	margin-top: 210px;
 }
 
+#about_photo > #social > img:nth-last-child(1){
+	margin-top: -5px;
+}
 
 
+/*--------------------RESPONSIVE */
 
+	/* if less than 1280px */
+	@media (max-width: 1280px) {
+
+	}
 
 
 
