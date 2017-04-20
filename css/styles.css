@@ -99,13 +99,14 @@ p {
 	justify-content:center;
 }
 
-#menu > div{
+#menu > div a:link{
 	margin-left: 40px;
 	margin-right: 40px;
 	font-family: Changa One, sans-serif;
 	color: #E8DBD2;
 	font-size: 21pt;
 	text-transform: uppercase;
+	text-decoration: none;
 	letter-spacing: 2px;
 	/* line text */
   	text-shadow:
@@ -113,6 +114,24 @@ p {
     1px -1px 0 #F05559,
     -1px 1px 0 #F05559,
     1px 1px 0 #F05559;
+}
+
+#menu > div a:visited{
+	color: #E8DBD2;
+	text-decoration: none;
+	text-transform: none;
+}
+
+#menu > div a:active{
+	color: #E8DBD2;
+	text-decoration: none;
+	text-transform: none;
+}
+
+#menu > div a:hover{
+	color: #F05559;
+	text-decoration: none;
+	text-shadow: none;
 }
 
 #mobilemenu{
