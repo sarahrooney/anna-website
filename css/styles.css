@@ -411,11 +411,60 @@ section{
 		}
 	}
 
-	/* if less than 768px */
-	@media (max-width: 768px) {
-		#exit {
-			margin-left: 610px;
-			margin-top: 20px;
+	/* if less than 414px */
+	@media (max-width: 414px) {
+		section{
+			margin: 20px;
+		}
+
+		#intrographic{
+			width: 150px;
+			margin: 0 auto;
+		}
+
+		#namegraphic{
+			width: 130px;
+		}
+
+		#blurb > p{
+			margin-left: 0;
+			margin-top: 10px;
+			width: 380px;
+			font-size: 16pt;
+			letter-spacing: 3px;
+			line-height: 28px;
+		}
+
+		#collab{
+			margin-left: 0px;
+			margin-top: 106px;
+			font-size: 31pt;
+			letter-spacing: 10px;
+			line-height: 40px;
+		}
+
+		#blueline{
+			width: 220px;
+			height: 5px;
+			margin-left: 153px;
+			margin-top: -102px;
+		}
+
+		#introphoto{
+			width: 240px;
+			margin-top: 10px;
+			margin-left: 134px;
+		}
+
+		#flowericon{
+			margin-top: 230px;
+			margin-left: 0px;
+		}
+
+		#scrolldown{
+			margin-left: 42%;
+			margin-top: 25px;
+			padding-bottom: 0%;
 		}
 	}
 
@@ -764,6 +813,11 @@ section{
 
 	/* if less than 600 */
 	@media (max-width: 600px) {
+		#about_photo{
+			background-position: 72% 90%;
+			height: 350px;
+		}
+
 		#abt_container{
 			display: none;
 		}
@@ -785,7 +839,7 @@ section{
 			position: absolute;
 			display: inline;
 			margin-top: 20px;
-			width: 227px;
+			width: 37%;
 		}
 
 		#camera{
@@ -798,6 +852,57 @@ section{
 			margin-left: 80%;
 		}
 	}
+
+	/* if less than 500 */
+	@media (max-width: 500px) {
+		#about_photo{
+			background-position: 72% 90%;
+			height: 250px;
+		}
+
+		#mobile_abt_container > h1 {
+			font-size: 28pt;
+		}
+
+		#abt_blueline{
+			width: 27.8%;
+		}
+	}
+
+	@media (max-width: 430px) {
+		#abt_blueline{
+			width: 20%;
+		}
+		#mobile_abt_container{
+			margin-top: 90px;
+		}
+		#mobile_abt_container > h1 {
+			font-size: 27pt;
+			letter-spacing: 15px;
+		}
+		#cv_resume{
+			margin-left: 75%;
+		}
+	}
+
+	@media (max-width: 400px) {
+		#about_photo{
+			background-position: 72% 90%;
+			height: 200px;
+		}
+		#abt_blueline{
+			width: 10%;
+		}
+		h1{
+			letter-spacing: 9pt;
+		}
+		h3{
+			font-size: 13pt;
+		}
+		#cv_resume{
+			margin-left: 72%;
+		}
+	}	
 
 
 
