@@ -34,10 +34,6 @@ body, a, a:hover {
 	cursor: url("../images/cursor.png"), progress !important;
 }
 
-section{
-	margin: 30px;
-}
-
 @font-face {
 	font-family: Changa One;
 	src: url('../fonts/changa_one/ChangaOne-Regular.ttf');
@@ -95,6 +91,10 @@ p {
 /*-------------------------------*/
 
 /*---------------------MENU */
+
+section{
+	margin: 30px;
+}
 
 #menu{
 	display: flex;
@@ -311,10 +311,7 @@ p {
 
 		#mobilemenu{
 			display: flex;
-			justify-content: flex-end;
-			padding-right: 3%;
-			padding-top: 3%;
-		}
+			justify-content: flex-end;		}
 
 		#mobilemenu > img{
 			display: block; 
@@ -355,11 +352,6 @@ p {
 			font-size: 12pt;
 			text-transform: uppercase;
 			letter-spacing: 2px;
-		}
-
-		#exit {
-			margin-left: 640px;
-			margin-top: 23px;
 		}
 
 		#content{
@@ -436,11 +428,6 @@ p {
 
 		#facelogo{
 			padding: 0px;
-		}
-
-		#exit{
-			margin-left: 242px;
-			margin-top: 0px;
 		}
 
 		#content{
@@ -576,6 +563,10 @@ p {
 	background-color: #E8E8E0;
 }
 
+#abt_mobilemenuexpand{
+	display: none;
+}
+
 #about_menu > div {
 	margin-left: 40px;
 	margin-right: 40px;
@@ -592,6 +583,10 @@ p {
     1px -1px 0 #F05559,
     -1px 1px 0 #F05559,
     1px 1px 0 #F05559;
+}
+
+#about_menu > .m {
+	display: none;
 }
 
 #about_menu a:link{
@@ -697,9 +692,70 @@ p {
 
 /*--------------------RESPONSIVE */
 
-	/* if less than 1280px */
-	@media (max-width: 1280px) {
+	/* if less than 1024px */
+	@media (max-width: 1024px) {
+		#camera{
+			margin-top: 55px;
+			margin-left: 4%;
+		}
+	}
 
+	/* if less than 960px */
+	@media (max-width: 960px) {
+		#camera{
+			margin-top: 55px;
+			margin-left: 1%;
+		}
+
+		#cv_resume{
+			margin-left: 77%;
+		}
+	}
+
+	/* if less than 800px */
+	@media (max-width: 800px) {
+
+		#about_menu > .des{
+			display: none;
+		}
+
+		#about_menu {
+			display: flex;
+			justify-content: flex-end;
+		}
+
+		#about_menu > .m {
+			display: inherit;
+			padding-right: 0;
+		}
+
+		#abt_mobilemenuexpand{
+			position: absolute;
+			z-index: 1000;
+			background-color: #e8e8e0;
+			width: 100%;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			display: none;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		#about_photo{
+			background-position: 72% 90%;
+			height: 400px;
+		}
+
+		#camera{
+			position: absolute;
+			margin-top: -20px;
+			margin-left: 2%;
+		}
+
+		#cv_resume{
+			margin-left: 83%;
+		}
 	}
 
 
