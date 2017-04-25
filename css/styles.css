@@ -83,8 +83,31 @@ p {
 	line-height: 22px;
 }
 
+#desktop_menu_section{
+	z-index: 1000;
+	padding-top: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 20px;
+	width: 100%;
+	position: fixed;
+	background-color: #E8DBD2;
+	transition-duration: 500ms;
+}
+
+#desktop_menu_section > #menu{
+	margin-left: -30px;
+}
+
+#facelogo{
+	position: absolute;
+	padding: 10px;
+	transition-duration: 2s;
+}
+
 .currentsection{
-	background-image: 'images/activelink_bg.png'
+	background-image: '../images/activelink_bg.png';
+	color: #F05559;
 }
 
 
@@ -96,7 +119,7 @@ p {
 
 /*---------------------MENU */
 
-section{
+#homepage{
 	margin: 30px;
 }
 
@@ -151,11 +174,6 @@ section{
 
 /*----------------LOGO & ICONS */
 
-#facelogo{
-	position: absolute;
-	padding: 10px;
-}
-
 #flowericon{
 	display: block;
 	margin-top: 30px;
@@ -164,8 +182,8 @@ section{
 
 #scrolldown{
 	display: block;
-	margin-top: 10px;
-	margin-left: 48%;
+	margin-top: 45px;
+	margin-left: 49%;
 	padding-bottom: 25px;
 }
 
@@ -174,7 +192,7 @@ section{
 
 #content{
 	display: flex;
-	margin-top: 100px;
+	margin-top: 140px;
 }
 
 #blurb {
@@ -333,10 +351,6 @@ section{
 			display: flex;
 			justify-content: flex-end;		
 		}
-
-		/*#mobilemenu > img{
-			display: block; 
-		}*/
 
 		#exitmobilemenu{
 			position: absolute;
@@ -656,36 +670,8 @@ section{
 
 /*---------------------MENU */
 
-#about_menu{
-	display: flex;
-	justify-content:center;
-	background-color: #E8E8E0;
-}
-
-#abt_mobilemenuexpand{
-	display: none;
-}
-
 #about_menu > div {
-	margin-left: 40px;
-	margin-right: 40px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	font-family: "Changa One", sans-serif;
 	color: #E8E8E0;
-	font-size: 21pt;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	/* line text */
-  	text-shadow:
-   	-1px -1px 0 #F05559,  
-    1px -1px 0 #F05559,
-    -1px 1px 0 #F05559,
-    1px 1px 0 #F05559;
-}
-
-#about_menu > .m {
-	display: none;
 }
 
 #about_menu a:link{
@@ -737,9 +723,9 @@ section{
 #about_photo{
 	background-image: url("../images/CreativeImpactAnnaRussett-2.jpg");
 	background-size: 100%;
-	background-position: 72% 72%;
+	background-position: 72% 64%;
 	width: 100%;
-	height: 640px;
+	height: 680px;
 }
 
 
