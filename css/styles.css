@@ -334,8 +334,13 @@ section{
 			justify-content: flex-end;		
 		}
 
-		#mobilemenu > img{
+		/*#mobilemenu > img{
 			display: block; 
+		}*/
+
+		#exitmobilemenu{
+			position: absolute;
+			margin-left: 185%;
 		}
 
 		#mobilemenuexpand{
