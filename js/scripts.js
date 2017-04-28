@@ -14,6 +14,7 @@ exitMobileMenu.addEventListener ("click", function(){
 
 
 
+
 var upperLeftLogo = document.querySelector('#facelogo');
 
 function homepageLogosSwitch() {
@@ -45,8 +46,6 @@ homepageLogosSwitch();
 
 
 
-//SCROLLING
-// window.scrollY value from homepage to about me = 0 to 814
 
 var aboutMe = document.querySelector('#aboutme');
 var homepage = document.querySelector('#homepage');
@@ -57,6 +56,7 @@ for (var i = 0; i < desktopMenuLink.length; i++) {
 	desktopMenuLink[i].style.color = "#E8DBD2";
 };
 
+// MENU HOVER
 desktopMenuLink[0].addEventListener("mouseover", function(){
 	for (var i = 0; i < desktopMenuLink.length; i++) {
 		desktopMenuLink[0].style.color = "#F05559";
@@ -70,6 +70,33 @@ desktopMenuLink[0].addEventListener("mouseout", function(){
 	}
 });
 
+desktopMenuLink[1].addEventListener("mouseover", function(){
+	for (var i = 0; i < desktopMenuLink.length; i++) {
+		desktopMenuLink[1].style.color = "#F05559";
+		desktopMenuLink[1].style.textShadow = "none"
+	}
+});
+desktopMenuLink[1].addEventListener("mouseout", function(){
+	for (var i = 0; i < desktopMenuLink.length; i++) {
+		desktopMenuLink[1].style.color = "#E8DBD2";
+		desktopMenuLink[1].style.textShadow = "-1px -1px 0 #F05559, 1px -1px 0 #F05559, -1px 1px 0 #F05559, 1px 1px 0 #F05559";
+	}
+});
+
+desktopMenuLink[2].addEventListener("mouseover", function(){
+	for (var i = 0; i < desktopMenuLink.length; i++) {
+		desktopMenuLink[2].style.color = "#F05559";
+		desktopMenuLink[2].style.textShadow = "none"
+	}
+});
+desktopMenuLink[2].addEventListener("mouseout", function(){
+	for (var i = 0; i < desktopMenuLink.length; i++) {
+		desktopMenuLink[2].style.color = "#E8DBD2";
+		desktopMenuLink[2].style.textShadow = "-1px -1px 0 #F05559, 1px -1px 0 #F05559, -1px 1px 0 #F05559, 1px 1px 0 #F05559";
+	}
+});
+
+// SCROLLING
 window.addEventListener("scroll", function(){
 	// console.log(window.scrollY);
 
@@ -84,6 +111,12 @@ window.addEventListener("scroll", function(){
 
 		desktopMenuLink[0].setAttribute('class','');
 		desktopMenuLink[0].style.textShadow = "-1px -1px 0 #F05559, 1px -1px 0 #F05559, -1px 1px 0 #F05559, 1px 1px 0 #F05559";
+		desktopMenuLink[0].addEventListener("mouseout", function(){
+			for (var i = 0; i < desktopMenuLink.length; i++) {
+				desktopMenuLink[0].style.color = "#E8DBD2";
+				desktopMenuLink[0].style.textShadow = "-1px -1px 0 #F05559, 1px -1px 0 #F05559, -1px 1px 0 #F05559, 1px 1px 0 #F05559";
+			}
+		});
 
 		upperLeftLogo.setAttribute('src','images/face_logo.png');
 
