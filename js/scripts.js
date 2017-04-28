@@ -96,9 +96,12 @@ desktopMenuLink[2].addEventListener("mouseout", function(){
 	}
 });
 
+
 // SCROLLING
 window.addEventListener("scroll", function(){
 	// console.log(window.scrollY);
+
+	var desktopSocialImages = document.querySelectorAll('.social_images');
 
 	if (window.scrollY >= homepage.offsetTop && window.scrollY < aboutMe.offsetTop) {
 
@@ -121,12 +124,20 @@ window.addEventListener("scroll", function(){
 		upperLeftLogo.setAttribute('src','images/face_logo.png');
 
 		//HOMEPAGE SOCIAL
-		//...
+		desktopSocialImages[0].setAttribute('src','images/social/snapchat_black.png');
+		desktopSocialImages[1].setAttribute('src','images/social/pinterest_black.png');
+		desktopSocialImages[2].setAttribute('src','images/social/linkedin_black.png');
+		desktopSocialImages[3].setAttribute('src','images/social/insta_black.png');
+		desktopSocialImages[4].setAttribute('src','images/social/twitter_black.png');
+		desktopSocialImages[5].setAttribute('src','images/social/fb_black.png');
+			desktopSocialImages[5].style.marginRight = "30px";
+		desktopSocialImages[6].setAttribute('src','images/social/yt_black.png');
 
 		console.log('homepage');
 	
 	} else if (window.scrollY >= aboutMe.offsetTop) {
 	
+		// ABOUT ME HOMEPAGE
 		desktopMenuSection.style.backgroundColor = "#E8E8E0";
 
 		for (var i = 0; i < desktopMenuLink.length; i++) {
@@ -142,6 +153,16 @@ window.addEventListener("scroll", function(){
 		});
 
 		upperLeftLogo.setAttribute('src','images/ar_logo_70px.png');
+
+		// ABOUT ME SOCIAL
+		desktopSocialImages[0].setAttribute('src','images/social/snapchat_pink.png');
+		desktopSocialImages[1].setAttribute('src','images/social/pinterest_pink.png');
+		desktopSocialImages[2].setAttribute('src','images/social/linkedin_pink.png');
+		desktopSocialImages[3].setAttribute('src','images/social/insta_pink.png');
+		desktopSocialImages[4].setAttribute('src','images/social/twitter_pink.png');
+		desktopSocialImages[5].setAttribute('src','images/social/fb_pink.png');
+			desktopSocialImages[5].style.marginRight = "34px";
+		desktopSocialImages[6].setAttribute('src','images/social/yt_pink.png');
 
 		console.log('about me');
 	}

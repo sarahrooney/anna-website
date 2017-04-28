@@ -124,6 +124,31 @@ p {
     1px 1px 0 #F05559;
 }
 
+#desktop_social{
+	z-index: 1000;
+	position: fixed;
+	margin-top: 200px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-content: flex-end;
+	align-items: flex-end;
+}
+
+#desktop_social > img{
+	margin-bottom: 40px;
+	margin-right: 30px;
+}
+
+#desktop_social > img:nth-last-child(2){
+}
+
+#desktop_social > img:nth-last-child(1){
+	margin-top: -8px;
+}
+
+.social_images{
+}
 
 
 
@@ -159,24 +184,6 @@ p {
     1px 1px 0 #F05559;
     transition-duration: 700ms;
 }
-
-/*#menu > div a:visited{
-	color: #E8DBD2;
-	text-decoration: none;
-	text-transform: uppercase;
-}
-
-#menu > div a:active{
-	color: #E8DBD2;
-	text-decoration: none;
-	text-transform: uppercase;
-}*/
-
-/*#menu > div a:hover{
-	color: #F05559;
-	text-decoration: none;
-	text-shadow: none;
-}*/
 
 #mobilemenu{
 	display: none;
@@ -267,19 +274,6 @@ p {
 
 
 /*-----------------------SOCIAL */
-
-#social{
-	margin-top: 70px;
-}
-
-#social > img{
-	display: block;
-	margin-bottom: 40px;
-}
-
-#social > img:nth-last-child(1){
-	margin-top: -5px;
-}
 
 #mobilesocial{
 	display: none;
@@ -685,7 +679,7 @@ p {
 #abt_placeholder{
 	background-image: url("../images/abt_placeholder.png");
 	width: 100%;
-	height: 50px;
+	height: 60px;
 }
 
 /*----------------LOGO & ICONS */
@@ -752,7 +746,7 @@ p {
 
 /*-----------------------SOCIAL */
 
-#about_photo > #social{
+/*#about_photo > #social{
 	float: right;
 	margin-right: 30px;
 	margin-top: 210px;
@@ -760,7 +754,7 @@ p {
 
 #about_photo > #social > img:nth-last-child(1){
 	margin-top: -5px;
-}
+}*/
 
 
 /*--------------------RESPONSIVE */
