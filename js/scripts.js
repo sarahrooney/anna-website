@@ -171,36 +171,35 @@ window.addEventListener("scroll", function(){
 
 
 //MENU CLICK
-	desktopMenuLink[0].addEventListener("click", function(){
-		 
-		if (window.scrollY < aboutMe.offsetTop){
-			var i = window.scrollY;
-			var scrolldown = setInterval(function(){
-				window.scrollBy(0,i);
-				i++;
+desktopMenuLink[0].addEventListener("click", function(){ 
+	if (window.scrollY < aboutMe.offsetTop){
+		var i = window.scrollY;
+		var scrolldown = setInterval(function(){
+			window.scrollBy(0,i);
+			i++;
 
-				if (window.scrollY >= aboutMe.offsetTop){
-					clearInterval(scrolldown);
-				}
-			}, 20)
-		}
+			if (window.scrollY >= aboutMe.offsetTop){
+				clearInterval(scrolldown);
+			}
+		}, 20)
+	}
 
-		if (desktopMenuLink[0].getAttribute('class') === 'currentsection'){
-		 	window.scrollBy(0,aboutMe.offsetTop);
-		}
+	else if (window.scrollY === aboutMe.offsetTop){
+	 	window.scrollBy(0,aboutMe.offsetTop);
+	}
+		
+	/* else if (window.scrollY > myWork.offsetTop){
+		var i = window.scrollY;
+		var scrollup = setInterval(function(){
+			window.scrollBy(0,i);
+			i--;
 
-		else if (window.scrollY > myWork.offsetTop){
-			var i = window.scrollY;
-			var scrollup = setInterval(function(){
-				window.scrollBy(0,i);
-				i--;
-
-				if (window.scrollY <= aboutMe.offsetTop){
-					clearInterval(scrollup);
-				}
-			}, 20)
-		}
-	});
+			if (window.scrollY <= aboutMe.offsetTop){
+				clearInterval(scrollup);
+			}
+		}, 20)
+	} */
+});
 
 
 
