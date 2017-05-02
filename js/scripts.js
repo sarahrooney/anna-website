@@ -226,6 +226,32 @@ var flowerPopup = document.querySelector('#flower_popup');
 		}
 	});
 
+// CAMERA EASTER EGG
+var cameraIcon = document.querySelector('#camera');
+var cameraPopup = document.querySelector('#camera_popup');
+	cameraIcon.addEventListener("mouseover",function(){
+		console.log('camera');
+	})
+	cameraIcon.addEventListener("click",function(){
+		cameraPopup.style.opacity = i
+		var i = 0
+		if(i == 0){
+			cameraPopup.style.opacity = "1";
+			i = 1;
+		} 
+		else if(i == 1){
+		 	cameraPopup.style.opacity = "0";
+		 	i = 0;
+		}
+	});
+	cameraPopup.addEventListener("click",function(){
+		cameraPopup.style.opacity = i
+		var i = 1
+		if(i == 1){
+			cameraPopup.style.opacity = "0";
+		}
+	});
+
 
 
 

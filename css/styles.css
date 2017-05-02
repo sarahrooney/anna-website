@@ -892,6 +892,34 @@ p {
 	display: inline;
 	margin-top: 55px;
 	margin-left: 10%;
+	z-index: 501;
+}
+
+#camera_popup{
+	z-index: 502;
+	position: absolute;
+	opacity: 0;
+	transition-property: opacity;
+    transition-duration: 700ms;
+    margin-top: -88px;
+	margin-left: 12%;
+	border-top: 3px solid #1c2da2;
+}
+#camera_popup > span{
+	z-index: 503;
+	position: absolute;
+	width: 270;
+	margin-left: -270px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 9px;
+	color: #FFF;
+	font-family: "Pragati Narrow", sans-serif;
+	font-size: 10.3pt;
+	letter-spacing: 1px;
+	text-align: justify;
+	font-weight: lighter;
 }
 
 #cv_resume{
