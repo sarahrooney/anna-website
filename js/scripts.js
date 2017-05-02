@@ -17,8 +17,8 @@ exitMobileMenu.addEventListener ("click", function(){
 
 var upperLeftLogo = document.querySelector('#facelogo');
 
+//HOMEPAGE LOGOS SWITCH
 function homepageLogosSwitch() {
-	//HOMEPAGE LOGOS SWITCH
 	var hpNameLogo = document.querySelector('#namegraphic');
 
 	hpNameLogo.addEventListener("mouseover", function(){
@@ -169,29 +169,38 @@ window.addEventListener("scroll", function(){
 });
 
 
+
 //MENU CLICK
-// desktopMenuLink[0].addEventListener("click", function(){
-// 	var i = window.scrollY;
-// 	var scrolldown = setInterval(function(){
-// 		window.scrollBy(0,i); 
-// 		i++; // 50 + 1 +1 +1+1+1
+	desktopMenuLink[0].addEventListener("click", function(){
+		 
+		if (window.scrollY < aboutMe.offsetTop){
+			var i = window.scrollY;
+			var scrolldown = setInterval(function(){
+				window.scrollBy(0,i);
+				i++;
 
-// 		if (i === aboutMe.offsetTop){
-// 			clearInterval(scroll)
-// 		}
-// 	}, 1000)
-// });
+				if (window.scrollY >= aboutMe.offsetTop){
+					clearInterval(scrolldown);
+				}
+			}, 20)
+		}
 
-// desktopMenuLink[0].addEventListener("click", function(){
-// 	function pageScroll() {
-//     	window.scrollBy(0,10); // scroll increments
-//     	scrolldelay = setTimeout('pageScroll()',100); // scrolls every 100 milliseconds
-// 	}
-// 	pageScroll();
-// });
+		if (desktopMenuLink[0].getAttribute('class') === 'currentsection'){
+		 	window.scrollBy(0,aboutMe.offsetTop);
+		}
 
+		else if (window.scrollY > myWork.offsetTop){
+			var i = window.scrollY;
+			var scrollup = setInterval(function(){
+				window.scrollBy(0,i);
+				i--;
 
-
+				if (window.scrollY <= aboutMe.offsetTop){
+					clearInterval(scrollup);
+				}
+			}, 20)
+		}
+	});
 
 
 
