@@ -60,7 +60,7 @@ h1{
 }
 
 h2 {
-	font-family: "Pragati Narrow", serif;
+	font-family: "Pragati Narrow", sans-serif;
 	color: #1C2EA3;
 	font-size: 13.6pt;
 	font-weight: lighter;
@@ -134,14 +134,16 @@ p {
 }
 
 #desktop_social{
-	z-index: 1000;
+	z-index: 500;
 	position: fixed;
 	margin-top: 200px;
-	width: 100%;
+	width: 20px;
+	right:0; 
+	padding-right: 5px;
 	display: flex;
 	flex-direction: column;
 	align-content: flex-end;
-	align-items: flex-end;
+	align-items: center;
 }
 
 #desktop_social > img{
@@ -153,7 +155,7 @@ p {
 }
 
 #desktop_social > img:nth-last-child(1){
-	margin-top: -8px;
+	margin-top: -5px;
 }
 
 .social_images{
@@ -211,15 +213,48 @@ p {
 
 #flowericon{
 	display: block;
-	margin-top: 150px;
+	z-index: 501;
+	margin-top: 160px;
 	margin-left: 15%;
+}
+
+#flower_popup{
+	z-index: 502;
+	position: absolute;
+	opacity: 0;
+	transition-property: opacity;
+    transition-duration: 700ms;
+	margin-top: 104px;
+	margin-left: 14%;
+}
+#flower_popup > span{
+	z-index: 503;
+	position: absolute;
+	width: 160;
+	margin-left: -172px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	color: #FFF;
+	font-family: "Vesper Libre", serif;
+	font-size: 11.3pt;
+	letter-spacing: 1px;
+	text-align: justify;
+	text-transform: uppercase;
+}
+#flower_popup > span > a{
+	font-family: "Pragati Narrow", sans-serif;
+	color: #FFF;
+	font-size: 10.9pt;
+	letter-spacing: 1px;
 }
 
 #scrolldown{
 	display: block;
 	width: 60px;
 	margin: 0 auto;
-	margin-top: 45px;
+	margin-top: 40px;
 	padding-bottom: 25px;
 }
 
@@ -244,7 +279,7 @@ p {
 #namegraphic{
 	margin-top: 50px;
 	margin-left: -60px;
-	z-index: 1100;
+	z-index: 600;
 }
 
 #blurb > p{
@@ -394,6 +429,10 @@ p {
 	/* if less than 800px */
 	@media (max-width: 800px) {
 		#menu > div{
+			display: none;
+		}
+
+		#desktop_social{
 			display: none;
 		}
 
@@ -806,7 +845,7 @@ p {
 #abt_placeholder{
 	background-image: url("../images/abt_placeholder.png");
 	width: 100%;
-	height: 60px;
+	height: 65px;
 }
 
 /*----------------LOGO & ICONS */
