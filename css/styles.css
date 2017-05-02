@@ -372,6 +372,11 @@ p {
 			margin-top: 200px;
 			margin-left: 5%;
 		}
+
+		#flower_popup{
+			margin-top: 145px;
+			margin-left: 5%;
+		}
 	}
 
 	/* if less than 980px */
@@ -400,17 +405,16 @@ p {
 			margin-top: 200px;
 			margin-left: 20px;
 		}
+		#flower_popup{
+			margin-top: 145px;
+			margin-left: 2%;
+		}
 
 		#scrolldown{
 			width: 60px;
 			margin: 0 auto;
 			margin-top: 50px;
 		}
-	}
-
-	/* if more than 960px */
-	@media (min-width: 960px) {
-
 	}
 
 	/* if more than 801px */
@@ -432,16 +436,24 @@ p {
 			display: none;
 		}
 
+		#desktop_menu_section{
+			padding: 5px;
+		}
+
 		#desktop_social{
 			display: none;
 		}
 
 		#mobilemenu{
 			display: flex;	
+			padding: 10px;
+			padding-right: 13px;
 		}
 
 		#exitmobilemenu{
 			position: fixed;
+			margin-left: 738px;
+			margin-top: -15px;
 		}
 
 		#mobilemenuexpand{
@@ -506,41 +518,57 @@ p {
 		}
 
 		#content{
-			margin-top: 60px;
+			margin-top: 100px;
 		}
 
 		#intrographic{
-			margin-left: 7%;
+			margin-left: 17%;
+			width: 170px;
+		}
+
+		#namegraphic{
+			width: 150px;
 		}
 
 		#blurb > p{
-			margin-left: 7%;
-			font-size: 26pt;
+			margin-left: 15px;
+			font-size: 20pt;
+			letter-spacing: 4px;
+			width: 490px;
 		}
 
 		#collab{
-			margin-left: 7%;
-			font-size: 52pt;
-			letter-spacing: 15px;
+			margin-left: 150px;
+			font-size: 36pt;
+			letter-spacing: 11px;
+			line-height: 60px;
 		}
 
 		#blueline{
-			margin-left: 40%;
-			width: 355px;
+			margin-left: 37%;
+			margin-top:-140px;
+			width: 245px;
 		}
 
 		#introphoto{
-			width: 350px;
-			margin-left: 250px;
+			width: 290px;
+			margin-top: -100px;
+			margin-left: 20px;
 		}
 
 		#flowericon{
-			margin-top: 390px;
-			margin-left: 8%;
+			margin-top: 180px;
+			margin-left: 0px;
+		}
+		#flower_popup{
+			margin-top: 125px;
+			margin-left: 0px;
 		}
 
 		#scrolldown{
-			margin-left: 45%;
+			width: 60px;
+			margin: 0 auto;
+			margin-top: 20px;
 		}
 
 		#facelogo{
@@ -587,6 +615,7 @@ p {
 		}
 
 		#intrographic{
+			margin-left: 7%;
 			width: 150px;
 			margin: 0 auto;
 		}
@@ -629,6 +658,10 @@ p {
 
 		#flowericon{
 			margin-top: 230px;
+			margin-left: 0px;
+		}
+		#flower_popup{
+			margin-top: 174px;
 			margin-left: 0px;
 		}
 
@@ -750,6 +783,10 @@ p {
 			margin-top: 205px;
 			margin-left: 0px;
 		}
+		#flower_popup{
+			margin-top: 150px;
+			margin-left: 0px;
+		}
 
 		#scrolldown{
 			width: 60px;
@@ -766,8 +803,8 @@ p {
 		}
 
 		#exitmobilemenu{
-			margin-left: 252px;
-			margin-top: -20px;
+			margin-left: 254px;
+			margin-top: -10px;
 		}
 
 		#desktop_menu_section{
@@ -970,8 +1007,9 @@ p {
 	@media (max-width: 800px) {
 
 		#about_photo{
-			background-position: 72% 90%;
-			height: 400px;
+			background-position: 50% 80%;
+			background-size: 125%;
+			height: 500px;
 		}
 
 		#camera{
@@ -988,8 +1026,9 @@ p {
 	/* if less than 600 */
 	@media (max-width: 600px) {
 		#about_photo{
-			background-position: 72% 90%;
-			height: 350px;
+			background-position: 50% 80%;
+			background-size: 125%;
+			height: 420px;
 		}
 
 		#abt_container{
@@ -1030,8 +1069,9 @@ p {
 	/* if less than 500 */
 	@media (max-width: 500px) {
 		#about_photo{
-			background-position: 72% 90%;
-			height: 250px;
+			background-position: 50% 80%;
+			background-size: 125%;
+			height: 300px;
 		}
 
 		#mobile_abt_container > h1 {

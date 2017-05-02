@@ -132,32 +132,6 @@ window.addEventListener("scroll", function(){
 		desktopSocialImages[5].setAttribute('src','images/social/fb_black.png');
 		desktopSocialImages[6].setAttribute('src','images/social/yt_black.png');
 
-		// FLOWER EASTER EGG
-		var flowerIcon = document.querySelector('#flowericon');
-		var flowerPopup = document.querySelector('#flower_popup');
-			flowerIcon.addEventListener("mouseover",function(){
-				console.log('flower');
-			})
-			flowerIcon.addEventListener("click",function(){
-				flowerPopup.style.opacity = i
-				var i = 0
-				if(i == 0){
-					flowerPopup.style.opacity = "1";
-					i = 1;
-				} 
-				else if(i == 1){
-				 	flowerPopup.style.opacity = "0";
-				 	i = 0;
-				}
-			});
-			flowerPopup.addEventListener("click",function(){
-				flowerPopup.style.opacity = i
-				var i = 1
-				if(i == 1){
-					flowerPopup.style.opacity = "0";
-				}
-			});
-
 		console.log('homepage');
 	
 	} else if (window.scrollY >= aboutMe.offsetTop) {
@@ -224,6 +198,33 @@ desktopMenuLink[0].addEventListener("click", function(){
 		}, 20)
 	} */
 });
+
+
+// FLOWER EASTER EGG
+var flowerIcon = document.querySelector('#flowericon');
+var flowerPopup = document.querySelector('#flower_popup');
+	flowerIcon.addEventListener("mouseover",function(){
+		console.log('flower');
+	})
+	flowerIcon.addEventListener("click",function(){
+		flowerPopup.style.opacity = i
+		var i = 0
+		if(i == 0){
+			flowerPopup.style.opacity = "1";
+			i = 1;
+		} 
+		else if(i == 1){
+		 	flowerPopup.style.opacity = "0";
+		 	i = 0;
+		}
+	});
+	flowerPopup.addEventListener("click",function(){
+		flowerPopup.style.opacity = i
+		var i = 1
+		if(i == 1){
+			flowerPopup.style.opacity = "0";
+		}
+	});
 
 
 
