@@ -84,7 +84,7 @@ p {
 }
 
 #desktop_menu_section{
-	z-index: 1000;
+	z-index: 1100;
 	padding-top: 20px;
 	padding-left: 30px;
 	padding-right: 30px;
@@ -217,8 +217,9 @@ p {
 
 #scrolldown{
 	display: block;
+	width: 60px;
+	margin: 0 auto;
 	margin-top: 45px;
-	margin-left: 49%;
 	padding-bottom: 25px;
 }
 
@@ -243,6 +244,7 @@ p {
 #namegraphic{
 	margin-top: 50px;
 	margin-left: -60px;
+	z-index: 1100;
 }
 
 #blurb > p{
@@ -340,46 +342,39 @@ p {
 	/* if less than 980px */
 	@media (max-width: 980px) {
 
-		#namegraphic{
+		/*#namegraphic{
 			padding: 10px;
-		}
+		}*/
 
 		#blurb > p{
-			display: block;
-			margin-top: 30px;
-			margin-left: 15%;
-		}
-
-		#collab{
-			margin-top: 180px;
-			margin-left: 16%;
-			font-size: 50pt;
-			letter-spacing: 14px;
+			width:550px;
+			margin-left: 32px;
+			font-size: 22pt;
 		}
 
 		#blueline{
 			margin-top:-172px;
-			margin-left: 42%;
-			width: 335px;
+			width: 302px;
 		}
 
 		#introphoto{
-			float: none;
-			display: block;
-			width: 400px;
-			margin-top: 10px;
-			margin-left: 240px;
+			margin-left: 20px;
 		}
 
 		#flowericon{
-			margin-top: 440px;
-			margin-left: 18%;
+			margin-top: 200px;
+			margin-left: 20px;
 		}
 
 		#scrolldown{
+			width: 60px;
+			margin: 0 auto;
 			margin-top: 50px;
-			margin-left: 48%;
 		}
+	}
+
+	/* if more than 960px */
+	@media (min-width: 960px) {
 
 	}
 
@@ -549,6 +544,7 @@ p {
 
 		#content{
 			margin-top: 100px;
+			margin-left: 0px;
 		}
 
 		#intrographic{
@@ -558,9 +554,11 @@ p {
 
 		#namegraphic{
 			width: 130px;
+			padding-left: 20px;
 		}
 
 		#blurb > p{
+			display: block;
 			margin-left: 0;
 			margin-top: 10px;
 			width: 380px;
@@ -671,15 +669,12 @@ p {
 
 		#content{
 			margin-top: 100px;
+			margin-left: 0px;
 		}
 
 		#intrographic{
 			width: 150px;
 			margin: 0 auto;
-		}
-
-		#namegraphic{
-			width: 130px;
 		}
 
 		#blurb > p{
@@ -750,6 +745,7 @@ p {
 
 		#content{
 			margin-top: 100px;
+			margin-left: 0px;
 		}
 
 		#intrographic{
@@ -904,6 +900,12 @@ p {
 		#camera{
 			margin-top: 55px;
 			margin-left: 4%;
+		}
+	}
+
+	@media (max-width: 980px){
+		#camera{
+			margin-left: 2%;
 		}
 	}
 

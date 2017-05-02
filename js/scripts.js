@@ -169,6 +169,30 @@ window.addEventListener("scroll", function(){
 });
 
 
+//MENU CLICK
+// desktopMenuLink[0].addEventListener("click", function(){
+// 	var i = window.scrollY;
+// 	var scrolldown = setInterval(function(){
+// 		window.scrollBy(0,i); 
+// 		i++; // 50 + 1 +1 +1+1+1
+
+// 		if (i === aboutMe.offsetTop){
+// 			clearInterval(scroll)
+// 		}
+// 	}, 1000)
+// });
+
+// desktopMenuLink[0].addEventListener("click", function(){
+// 	function pageScroll() {
+//     	window.scrollBy(0,10); // scroll increments
+//     	scrolldelay = setTimeout('pageScroll()',100); // scrolls every 100 milliseconds
+// 	}
+// 	pageScroll();
+// });
+
+
+
+
 
 
 
