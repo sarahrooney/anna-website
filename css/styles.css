@@ -99,6 +99,25 @@ p {
 	margin-left: -30px;
 }
 
+#mywork_append{
+	opacity: 0;
+	width: 400px;
+	display: flex;
+	margin: 0 auto;
+	font-family: "Vesper Libre", serif;
+	font-size: 12pt;
+	transition-property: opacity;
+	transition-duration: 500ms;
+}
+
+#mywork_append > span{
+	margin-top: -30px;
+	margin-right: 30px;
+	padding-top: 13px;
+	margin-bottom: -15px;
+	transition-duration: 700ms;
+}
+
 #mobilemenu{
 	display: none;
 	justify-content: flex-end;
@@ -426,6 +445,9 @@ p {
 			display: none;
 		}
 		#sub{
+			display: none;
+		}
+		#exitmobilemenu{
 			display: none;
 		}
 	}
@@ -1257,20 +1279,20 @@ p {
 
 
 /*-------------------------------*/
-/*----------------------ABOUT ME */
+/*-----------------------MY WORK */
 /*-------------------------------*/
 
 /*------------------GENERAL */
 
 #mywork{
 	margin: 0;
-	background-color: #E8E8E0;
+	background-color: #E8DBD2;
 }
 
 #mywork_placeholder{
 	background-image: url("../images/mywork_placeholder.png");
 	width: 100%;
-	height: 80px;
+	height: 70px;
 }
 
 
@@ -1284,40 +1306,39 @@ p {
 	z-index: 501;
 }
 
-/*#planet_popup{
+#planet_popup{
 	z-index: 502;
 	position: absolute;
 	opacity: 0;
 	transition-property: opacity;
     transition-duration: 700ms;
-    margin-top: -88px;
-	margin-left: 12%;
-	border-top: 3px solid #1c2da2;
+    margin-top: -115px;
+	margin-left: 74.5%;
 }
 #planet_popup > span{
 	z-index: 503;
 	position: absolute;
-	width: 270;
-	margin-left: -270px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 3px;
-	padding-bottom: 9px;
+	width: 244;
+	margin-left: -244px;
+	padding-left: 11px;
+	padding-right: 11px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	color: #FFF;
 	font-family: "Pragati Narrow", sans-serif;
 	font-size: 10.3pt;
 	letter-spacing: 1px;
 	text-align: justify;
 	font-weight: lighter;
-}*/
+}
 
 
 /*-----------------------IMAGE */
 
 #mywork_photo{
-	background-image: url("../images/CreativeImpactAnnaRussett-32.jpg");
-	background-position: 72% 63%;
-	background-size: 100%;
+	background-image: url("../images/mywork_images.jpg");
+	background-position: 0% 55%;
+	background-size: 300%;
 	width: 100%;
 	height: 680px;
 }
@@ -1325,29 +1346,41 @@ p {
 
 /*---------------------CONTENT */
 
-#work_container {
+#work_container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	overflow-x: scroll;
+}
+
+#work_container > section{
+	flex: 0 0 100%;
+}
+
+#agency {
     margin:auto;
     text-align: center;
 }
 
-#work_container > h1 {
-	text-align: center;
-	margin: 50px 230px 30px 0px;
+#agency > h1 {
+	text-align: left;
+	margin: 50px 0px 30px 380px;
 }
 
-#work_blueline{
-	position: absolute;
+#agency_blueline{
+	position: relative;
 	display: inline-block;
 	background-color: #1C2EAA;
-	width: 230px;
-	margin-top: 20px;
+	width: 225px;
+	margin-top: 10px;
+	margin-bottom: 12px;
+	margin-left: -10px;
 	height: 6px;
-	margin-bottom: 68px;
 }
 
 #work_column1 {
     width: 324px;
-    margin-right: 5px;
+    margin-right: 10px;
     display: inline-block;
     text-align: justify;
 }
