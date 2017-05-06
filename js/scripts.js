@@ -186,6 +186,10 @@ window.addEventListener("scroll", function(){
 
 		desktopMenuLink[0].setAttribute('class','');
 		desktopMenuLink[0].style.textShadow = "-1px -1px 0 #F05559, 1px -1px 0 #F05559, -1px 1px 0 #F05559, 1px 1px 0 #F05559";
+		desktopMenuLink[0].addEventListener("mouseout", function(){
+			desktopMenuLink[0].style.color = '#E8DBD2';
+			desktopMenuLink[0].style.textShadow = "-1px -1px 0 #F05559, 1px -1px 0 #F05559, -1px 1px 0 #F05559, 1px 1px 0 #F05559";
+		});
 		desktopMenuLink[1].setAttribute('class','currentsection');
 		desktopMenuLink[1].style.color = "#F05559";
 		desktopMenuLink[1].style.textShadow = "none";
@@ -198,6 +202,17 @@ window.addEventListener("scroll", function(){
 		for (var i = 0; i < myWorkMenuAppendSpan.length; i++) {
 			myWorkMenuAppendSpan[i].style.marginTop = "0px";
 		};
+
+		var myWorkPhoto = document.querySelector('#mywork_photo');
+		myWorkMenuAppendSpan[0].addEventListener("click", function(){
+			myWorkPhoto.style.backgroundPosition = "0% 55%"
+		});
+		myWorkMenuAppendSpan[1].addEventListener("click", function(){
+			myWorkPhoto.style.backgroundPosition = "50% 55%"
+		});
+		myWorkMenuAppendSpan[2].addEventListener("click", function(){
+			myWorkPhoto.style.backgroundPosition = "100% 55%"
+		});
 	}
 });
 
