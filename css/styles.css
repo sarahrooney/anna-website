@@ -1297,6 +1297,7 @@ p {
 #mywork{
 	margin: 0;
 	background-color: #E8DBD2;
+	transition-duration: 700ms;
 }
 
 #mywork_placeholder{
@@ -1314,6 +1315,8 @@ p {
 	margin-top: -40px;
 	margin-left: 85%;
 	z-index: 501;
+	transition-property: opacity, margin-left;
+    transition-duration: 700ms;
 }
 
 #planet_popup{
@@ -1342,6 +1345,42 @@ p {
 	font-weight: lighter;
 }
 
+#book{
+	position: absolute;
+	display: inline;
+	margin-top: 180px;
+	margin-left: 150%;
+	z-index: 501;
+	transition-property: opacity, margin-left;
+    transition-duration: 700ms;
+}
+
+#book_popup{
+	z-index: 502;
+	position: absolute;
+	opacity: 0;
+	transition-property: opacity;
+    transition-duration: 700ms;
+    margin-top: 30px;
+	margin-left: 68%;
+}
+#book_popup > span{
+	z-index: 503;
+	position: absolute;
+	width: 270;
+	margin-left: -270px;
+	padding-left: 11px;
+	padding-right: 11px;
+	padding-top: 8px;
+	padding-bottom: 20px;
+	color: #000;
+	font-family: "Pragati Narrow", sans-serif;
+	font-size: 10.3pt;
+	letter-spacing: 1px;
+	text-align: justify;
+	font-weight: lighter;
+}
+
 
 /*-----------------------IMAGE */
 
@@ -1361,21 +1400,26 @@ p {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	overflow-x: scroll;
+	overflow-x: hidden;
+	transition-duration: 700ms;
 }
 
 #work_container > section{
 	flex: 0 0 100%;
+	transition-duration: 700ms;
 }
 
-#agency {
+#agency{
     margin:auto;
     text-align: center;
+    margin-left: 0px;
+    margin-top: 50px;
+    transition-property: margin-left;
+    transition-duration: 700ms;
 }
 
 #agency > h1 {
-	text-align: left;
-	margin: 50px 0px 30px 380px;
+	margin-bottom: 30px;
 }
 
 #agency_blueline{
@@ -1389,20 +1433,56 @@ p {
 	height: 6px;
 }
 
-#work_column1 {
+#agency > #work_column1 {
     width: 324px;
     margin-right: 10px;
     display: inline-block;
     text-align: justify;
 }
 
-#work_column2 {
+#agency > #work_column2 {
 	width: 324px;
     margin-left: 10px;
     display: inline-block;
     position: relative;
     top: -22px;
     text-align: justify;
+}
+
+#influencer {
+	margin:auto;
+    text-align: left;
+    margin-left: 0px;
+    margin-top: 50px;
+}
+
+#influencer > h1 {
+	margin-bottom: 30px;
+	color: #E1C1B3;
+}
+
+#influencer_blueline{
+	position: relative;
+	display: inline-block;
+	background-color: #F05559;
+	width: 260px;
+	margin-top: 10px;
+	margin-bottom: 12px;
+	margin-left: -10px;
+	height: 6px;
+}
+
+#influencer > #work_column1 {
+    width: 324px;
+    display: inline-block;
+    text-align: justify;
+}
+#influencer > #work_column1 > p{
+    color: #E8E8E0;
+}
+
+#consulting{
+
 }
 
 #mobile_work_container{
