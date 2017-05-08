@@ -1391,6 +1391,16 @@ p {
     transition-duration: 600ms;
 }
 
+#eye{
+	position: absolute;
+	display: inline;
+	margin-top: 50px;
+	margin-left: 150%;
+	z-index: 501;
+	transition-property: opacity, margin-left;
+    transition-duration: 600ms;
+}
+
 
 /*-----------------------IMAGE */
 
@@ -1518,6 +1528,20 @@ p {
     width: 324px;
     display: inline-block;
     text-align: justify;
+}
+
+#personal{
+	margin:auto;
+    text-align: center;
+    max-width: 640px;
+    margin-left: 0px;
+    margin-top: 50px;
+}
+
+#personal > h1 {
+	margin-bottom: 30px;
+	font-size: 24pt;
+	letter-spacing: 8px;
 }
 
 #mobile_work_container{

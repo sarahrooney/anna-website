@@ -233,6 +233,8 @@ window.addEventListener("scroll", function(){
 			bookIcon.style.marginLeft = "150%";
 			//rainbow easter egg disappear
 			rainbowIcon.style.marginLeft = "150%";
+			//eye easter egg disappear
+			eyeIcon.style.marginLeft = "150%";
 
 			// planet easter egg
 			planetIcon.style.marginLeft = "85%";
@@ -257,6 +259,8 @@ window.addEventListener("scroll", function(){
 			planetIcon.style.marginLeft = "-30%";
 			//rainbow easter egg disappear
 			rainbowIcon.style.marginLeft = "150%";
+			//eye easter egg disappear
+			eyeIcon.style.marginLeft = "150%";
 
 			//book easter egg appear
 			bookIcon.style.marginLeft = "70%";
@@ -280,17 +284,44 @@ window.addEventListener("scroll", function(){
 			//planet easter egg disappear
 			planetIcon.style.marginLeft = "-30%";
 			//book easter egg disappear
-			bookIcon.style.marginLeft = "150%";
+			bookIcon.style.marginLeft = "-30%";
+			//eye easter egg disappear
+			eyeIcon.style.marginLeft = "150%";
 
 			//rainbow easter egg appear
 			rainbowIcon.style.marginLeft = "85%"
+		});
+
+		myWorkMenuAppendSpan[3].addEventListener("click", function(){
+			myWork.style.backgroundColor = "#E8E8E0"
+			desktopMenuSection.style.backgroundColor = "#E8E8E0"
+			desktopMenuLink[0].style.color = "#E8E8E0"; //link color
+				desktopMenuLink[0].addEventListener("mouseout", function(){
+					desktopMenuLink[0].style.color = '#E8E8E0';
+				});
+				desktopMenuLink[2].style.color = "#E8E8E0";
+				desktopMenuLink[2].addEventListener("mouseout", function(){
+					desktopMenuLink[2].style.color = '#E8E8E0';
+				});
+			agency.style.marginLeft = "-353%";
+			upperLeftLogo.setAttribute('src','images/ar_logo_70px.png'); //blue logo
+
+			//planet easter egg disappear
+			planetIcon.style.marginLeft = "-30%";
+			//book easter egg disappear
+			bookIcon.style.marginLeft = "-30%";
+			//rainbow easter egg disappear
+			rainbowIcon.style.marginLeft = "-30%";
+
+			//eye easter egg appear
+			eyeIcon.style.marginLeft = "10%"
 		});
 	}
 });
 
 
 
-//MENU CLICK AUTO SCROLL
+//MENU CLICK AUTO SCROLL -- not working yet
 desktopMenuLink[0].addEventListener("click", function(){ 
 	if (window.scrollY < aboutMe.offsetTop){
 		var i = window.scrollY;
@@ -308,7 +339,7 @@ desktopMenuLink[0].addEventListener("click", function(){
 	 	window.scrollBy(0,aboutMe.offsetTop);
 	}
 		
-	/* else if (window.scrollY > myWork.offsetTop){
+	/*else if (window.scrollY >= myWork.offsetTop){
 		var i = window.scrollY;
 		var scrollup = setInterval(function(){
 			window.scrollBy(0,i);
@@ -318,7 +349,24 @@ desktopMenuLink[0].addEventListener("click", function(){
 				clearInterval(scrollup);
 			}
 		}, 20)
-	} */
+	}*/
+});
+desktopMenuLink[1].addEventListener("click", function(){
+	if (window.scrollY < myWork.offsetTop){
+		var i = window.scrollY;
+		var scrolldown = setInterval(function(){
+			window.scrollBy(0,i);
+			i++;
+
+			if (window.scrollY >= myWork.offsetTop){
+				clearInterval(scrolldown);
+			}
+		}, 20)
+	}
+
+	else if (window.scrollY === myWork.offsetTop){
+	 	window.scrollBy(0,myWork.offsetTop);
+	}
 });
 
 
@@ -420,6 +468,8 @@ var bookPopup = document.querySelector('#book_popup');
 // RAINBOW EASTER EGG -- no popup? yet?
 var rainbowIcon = document.querySelector('#rainbow');
 
+// EYE EASTER EGG -- no popup? yet?
+var eyeIcon = document.querySelector('#eye');
 
 
 
