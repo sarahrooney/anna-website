@@ -218,17 +218,24 @@ window.addEventListener("scroll", function(){
 			myWork.style.backgroundColor = "#E8DBD2"
 			desktopMenuSection.style.backgroundColor = "#E8DBD2"
 				desktopMenuLink[0].style.color = "#E8DBD2"; //link color
+				desktopMenuLink[0].addEventListener("mouseout", function(){
+					desktopMenuLink[0].style.color = '#E8DBD2';
+				});
 				desktopMenuLink[2].style.color = "#E8DBD2";
+				desktopMenuLink[2].addEventListener("mouseout", function(){
+					desktopMenuLink[2].style.color = '#E8DBD2';
+				});
 			myWorkPhoto.style.backgroundPosition = "0% 55%"
 			agency.style.marginLeft = "0px"
 			upperLeftLogo.setAttribute('src','images/ar_logo_70px.png'); //blue logo
 
-			// planet easter egg
-			planetIcon.style.marginLeft = "85%";
-
 			//book easter egg disappear
 			bookIcon.style.marginLeft = "150%";
-			bookPopup.style.opacity = "0";
+			//rainbow easter egg disappear
+			rainbowIcon.style.marginLeft = "150%";
+
+			// planet easter egg
+			planetIcon.style.marginLeft = "85%";
 		});
 
 		myWorkMenuAppendSpan[1].addEventListener("click", function(){
@@ -248,7 +255,8 @@ window.addEventListener("scroll", function(){
 
 			//planet easter egg disappear
 			planetIcon.style.marginLeft = "-30%";
-			planetPopup.style.opacity = "0";
+			//rainbow easter egg disappear
+			rainbowIcon.style.marginLeft = "150%";
 
 			//book easter egg appear
 			bookIcon.style.marginLeft = "70%";
@@ -258,17 +266,24 @@ window.addEventListener("scroll", function(){
 			myWork.style.backgroundColor = "#E8DBD2"
 			desktopMenuSection.style.backgroundColor = "#E8DBD2"
 				desktopMenuLink[0].style.color = "#E8DBD2"; //link color
+				desktopMenuLink[0].addEventListener("mouseout", function(){
+					desktopMenuLink[0].style.color = '#E8DBD2';
+				});
 				desktopMenuLink[2].style.color = "#E8DBD2";
+				desktopMenuLink[2].addEventListener("mouseout", function(){
+					desktopMenuLink[2].style.color = '#E8DBD2';
+				});
 			myWorkPhoto.style.backgroundPosition = "100% 55%"
-			agency.style.marginLeft = "-100%";
+			agency.style.marginLeft = "-174%";
 			upperLeftLogo.setAttribute('src','images/ar_logo_70px.png'); //blue logo
 
 			//planet easter egg disappear
 			planetIcon.style.marginLeft = "-30%";
-			planetPopup.style.opacity = "0";
 			//book easter egg disappear
 			bookIcon.style.marginLeft = "150%";
-			bookPopup.style.opacity = "0";
+
+			//rainbow easter egg appear
+			rainbowIcon.style.marginLeft = "85%"
 		});
 	}
 });
@@ -401,6 +416,9 @@ var bookPopup = document.querySelector('#book_popup');
 			bookPopup.style.opacity = "0";
 		}
 	});
+
+// RAINBOW EASTER EGG -- no popup? yet?
+var rainbowIcon = document.querySelector('#rainbow');
 
 
 

@@ -1316,7 +1316,7 @@ p {
 	margin-left: 85%;
 	z-index: 501;
 	transition-property: opacity, margin-left;
-    transition-duration: 700ms;
+    transition-duration: 600ms;
 }
 
 #planet_popup{
@@ -1324,7 +1324,7 @@ p {
 	position: absolute;
 	opacity: 0;
 	transition-property: opacity;
-    transition-duration: 700ms;
+    transition-duration: 600ms;
     margin-top: -115px;
 	margin-left: 74.5%;
 }
@@ -1352,7 +1352,7 @@ p {
 	margin-left: 150%;
 	z-index: 501;
 	transition-property: opacity, margin-left;
-    transition-duration: 700ms;
+    transition-duration: 600ms;
 }
 
 #book_popup{
@@ -1360,7 +1360,7 @@ p {
 	position: absolute;
 	opacity: 0;
 	transition-property: opacity;
-    transition-duration: 700ms;
+    transition-duration: 600ms;
     margin-top: 30px;
 	margin-left: 68%;
 }
@@ -1379,6 +1379,16 @@ p {
 	letter-spacing: 1px;
 	text-align: justify;
 	font-weight: lighter;
+}
+
+#rainbow{
+	position: absolute;
+	display: inline;
+	margin-top: 50px;
+	margin-left: 150%;
+	z-index: 501;
+	transition-property: opacity, margin-left;
+    transition-duration: 600ms;
 }
 
 
@@ -1482,7 +1492,32 @@ p {
 }
 
 #consulting{
+	margin:auto;
+    text-align: left;
+    margin-left: 0px;
+    margin-top: 50px;
+}
 
+#consulting > h1 {
+	margin-bottom: 30px;
+	color: #000;
+}
+
+#consulting_blueline{
+	position: relative;
+	display: inline-block;
+	background-color: #F05559;
+	width: 260px;
+	margin-top: 10px;
+	margin-bottom: 12px;
+	margin-left: -10px;
+	height: 6px;
+}
+
+#consulting > #work_column1 {
+    width: 324px;
+    display: inline-block;
+    text-align: justify;
 }
 
 #mobile_work_container{
