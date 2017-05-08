@@ -1037,7 +1037,7 @@ p {
 		#about_photo{
 			background-position: 50% 75%;
 			background-size: 120%;
-			height: 580px;
+			height: 550px;
 		}
 
 		#camera{
@@ -1453,6 +1453,10 @@ p {
 	height: 6px;
 }
 
+#mobile{
+	display: none;
+}
+
 #agency > #work_column1 {
     width: 324px;
     margin-right: 10px;
@@ -1538,6 +1542,12 @@ p {
     margin-top: 50px;
 }
 
+#personal span{
+	margin-right: 35px;
+	font-size: 9.5pt;
+	letter-spacing: 3px;
+}
+
 #personal > h1 {
 	margin-bottom: 30px;
 	font-size: 24pt;
@@ -1548,12 +1558,118 @@ p {
 	display: none;
 }
 
+#agencymobile{
+	display: none;
+}
+#agencyarrow{
+	display: none;
+}
+#mobile_agency_column2{
+	display: none;
+}
+
 
 /*--------------------RESPONSIVE */
 
 	/* if less than 1024px */
 	@media (max-width: 1024px) {
+		#mywork_photo{
+			height: 600px;
+		}
+	}
 
+	/* if less than 960px */
+	@media (max-width: 960px) {
+		#mywork_photo{
+			height: 550px;
+		}
+	}
+
+	/* if less than 800px */
+	@media (max-width: 800px) {
+		#mywork_append{
+			display: none;
+		}
+	}
+
+	/* if less than 414px */
+	@media (max-width: 414px) {
+		#mywork_append{
+			display: none;
+		}
+
+		#mywork_photo{
+			height: 250px;
+		}
+		
+		#mywork_placeholder{
+			height: 57px
+		}
+		
+		#planet{
+			margin-left: 72%;
+		}
+		#planet_popup{
+			margin-left: 32%;
+		}
+		
+		#work_container h1{
+			font-size: 27pt;
+			letter-spacing: 9pt;
+		}
+		
+		#agency_blueline{
+			display: none;
+		}
+		
+		#agency{
+			margin-top: 40px
+		}
+		
+		#agency > h1 {
+			margin-bottom: 6px;
+		}
+
+		#agency p {
+			line-height: 15px;
+		}
+		#agency > #work_column1 {
+			margin-right: 0px;
+   			width: 370px;
+   		}
+   		#agency > #work_column2{
+   			display: none;
+   		}
+		#mobile_agency_column2{
+			width: 365px;
+			margin-left: 0px;
+			display: block;
+			max-height: 0px;
+			overflow-y: hidden; 
+			text-align: justify;
+			margin-left: 20px;
+			margin-bottom: 10px;
+			transition-duration: 700ms;
+		}
+
+		#agencymobile{
+			display: block;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		#agencymobile h1{
+			font-size: 18px;
+			letter-spacing: 5px;
+			margin-bottom: 5px;
+		}
+		#agencyarrow{
+			display: block;
+			width: 30px;
+			margin: 0 auto;
+			margin-bottom: 80px;
+			z-index: 500;
+			transition-duration: 700ms;
+		}
 	}
 
 

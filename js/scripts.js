@@ -270,7 +270,7 @@ window.addEventListener("scroll", function(){
 				agency.style.marginLeft = "-80%";
 			} if(window.innerWidth <= 1024){
 				agency.style.marginLeft = "-90%";
-			}
+			} 
 		});
 
 		myWorkMenuAppendSpan[2].addEventListener("click", function(){
@@ -391,6 +391,21 @@ desktopMenuLink[1].addEventListener("click", function(){
 	 	window.scrollBy(0,myWork.offsetTop);
 	}
 });
+
+
+//MOBILE READ MORES :: AGENCY
+var agencyContinue = document.querySelector('#agencymobile');
+var agencyColumnTwo = document.querySelector('#mobile_agency_column2')
+var agencyArrow = document.querySelector('#agencyarrow')
+	agencyArrow.addEventListener("click",function(){
+		if(agencyArrow.getAttribute('src') === "images/scrollarrow_down_pink.png"){
+			agencyColumnTwo.style.maxHeight = "310px";
+			agencyArrow.setAttribute('src','images/scrollarrow_up_pink.png');
+		} else if(agencyArrow.getAttribute('src') === "images/scrollarrow_up_pink.png"){
+			agencyColumnTwo.style.maxHeight = "0px";
+			agencyArrow.setAttribute('src','images/scrollarrow_down_pink.png');
+		}
+	});
 
 
 // FLOWER EASTER EGG
