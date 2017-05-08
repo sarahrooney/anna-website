@@ -252,7 +252,7 @@ window.addEventListener("scroll", function(){
 					desktopMenuLink[2].style.color = '#2230A4';
 				});
 			myWorkPhoto.style.backgroundPosition = "50% 55%";
-			agency.style.marginLeft = "-74%";
+			// agency.style.marginLeft = "-74%";
 			upperLeftLogo.setAttribute('src','images/ar_logo_70px_white.png'); //white logo
 
 			//planet easter egg disappear
@@ -264,6 +264,13 @@ window.addEventListener("scroll", function(){
 
 			//book easter egg appear
 			bookIcon.style.marginLeft = "70%";
+
+			//responsive
+			if(window.innerWidth > 1024){
+				agency.style.marginLeft = "-80%";
+			} if(window.innerWidth <= 1024){
+				agency.style.marginLeft = "-90%";
+			}
 		});
 
 		myWorkMenuAppendSpan[2].addEventListener("click", function(){
@@ -278,7 +285,7 @@ window.addEventListener("scroll", function(){
 					desktopMenuLink[2].style.color = '#E8DBD2';
 				});
 			myWorkPhoto.style.backgroundPosition = "100% 55%"
-			agency.style.marginLeft = "-174%";
+			// agency.style.marginLeft = "-174%";
 			upperLeftLogo.setAttribute('src','images/ar_logo_70px.png'); //blue logo
 
 			//planet easter egg disappear
@@ -290,6 +297,13 @@ window.addEventListener("scroll", function(){
 
 			//rainbow easter egg appear
 			rainbowIcon.style.marginLeft = "85%"
+
+			//responsive
+			if(window.innerWidth > 1024){
+				agency.style.marginLeft = "-180%";
+			} if(window.innerWidth <= 1024){
+				agency.style.marginLeft = "-190%";
+			}
 		});
 
 		myWorkMenuAppendSpan[3].addEventListener("click", function(){
@@ -303,7 +317,7 @@ window.addEventListener("scroll", function(){
 				desktopMenuLink[2].addEventListener("mouseout", function(){
 					desktopMenuLink[2].style.color = '#E8E8E0';
 				});
-			agency.style.marginLeft = "-353%";
+			// agency.style.marginLeft = "-353%";
 			upperLeftLogo.setAttribute('src','images/ar_logo_70px.png'); //blue logo
 
 			//planet easter egg disappear
@@ -314,7 +328,16 @@ window.addEventListener("scroll", function(){
 			rainbowIcon.style.marginLeft = "-30%";
 
 			//eye easter egg appear
-			eyeIcon.style.marginLeft = "10%"
+			// eyeIcon.style.marginLeft = "10%"
+
+			//responsive
+			if(window.innerWidth > 1024){
+				agency.style.marginLeft = "-361%";
+				eyeIcon.style.marginLeft = "10%"
+			} if(window.innerWidth <= 1024){
+				agency.style.marginLeft = "-340%";
+				eyeIcon.style.marginLeft = "5%"
+			}
 		});
 	}
 });

@@ -1472,7 +1472,7 @@ p {
 #influencer {
 	margin:auto;
     text-align: left;
-    margin-left: 0px;
+    margin-left: 100px;
     margin-top: 50px;
 }
 
@@ -1549,6 +1549,12 @@ p {
 }
 
 
+/*--------------------RESPONSIVE */
+
+	/* if less than 1024px */
+	@media (max-width: 1024px) {
+
+	}
 
 
 
