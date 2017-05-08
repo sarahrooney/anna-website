@@ -135,6 +135,7 @@ p {
 
 #mobilemenuexpand{
 	display: none;
+	transition-duration:700ms;
 }
 
 #facelogo{
@@ -495,10 +496,13 @@ p {
 			width: 100%;
 			padding-top: 30px;
 			padding-bottom: 30px;
-			display: none;
+			margin-left: 150%;
+			opacity: 0;
+			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
 			align-items: center;
+			transition-duration:400ms;
 		}
 
 		#mobilemenuexpand > #expanded a:link{

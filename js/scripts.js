@@ -3,13 +3,15 @@ var mobileMenuIcon = document.querySelector('#mobilemenu');
 var mobileMenuExpand = document.querySelector('#mobilemenuexpand');
 
 mobileMenuIcon.addEventListener ("click", function(){
-	mobileMenuExpand.style.display = "flex"
+	// mobileMenuExpand.style.display = "flex"
+	mobileMenuExpand.style.opacity = "1";
+	mobileMenuExpand.style.marginLeft = "0%"
 });
 
 var exitMobileMenu = document.querySelector('#exitmobilemenu');
-
 exitMobileMenu.addEventListener ("click", function(){
- 	mobileMenuExpand.style.display = "none";
+ 	mobileMenuExpand.style.opacity = "0";
+ 	mobileMenuExpand.style.marginLeft = "150%"
 });
 
 
