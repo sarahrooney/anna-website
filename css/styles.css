@@ -1083,7 +1083,7 @@ p {
 	}
 
 	/* if less than 600 */
-	@media (max-width: 600px) {
+	@media (max-width: 668px) {
 		#about_photo{
 			background-position: 50% 80%;
 			background-size: 125%;
@@ -1626,7 +1626,151 @@ p {
 		#mywork_append{
 			display: none;
 		}
+		#mywork_photo{
+			height: 500px;
+		}
 	}
+
+	/* if less than 754px */
+	@media (max-width: 754px) {
+		#mywork_photo{
+			height: 420px;
+		}
+	}
+
+	/* if less than 672px */
+	@media (max-width: 672px){
+		#work_container h1{
+			font-size: 27pt;
+			letter-spacing: 9pt;
+		}
+		#mywork_placeholder{
+			height: 55px;
+		}
+
+		#planet_popup{
+			margin-left: 60%;
+		}
+		
+		#agency{
+			margin-top: 40px
+		}
+		
+		#agency > h1 {
+			margin-bottom: 6px;
+		}
+
+		#agency p {
+			line-height: 16px;
+		}
+		#agency > #work_column1 {
+			margin-right: 0px;
+   			width: 90%;
+   		}
+   		#agency > #work_column2{
+   			display: none;
+   		}
+		#mobile_agency_column2{
+			width: 90%;
+			margin-left: 0px;
+			display: block;
+			max-height: 0px;
+			overflow-y: hidden; 
+			text-align: justify;
+			margin-left: 30px;
+			margin-bottom: 10px;
+			transition-duration: 700ms;
+		}
+
+		#agencymobile{
+			display: block;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		#agencymobile h1{
+			font-size: 18px;
+			letter-spacing: 5px;
+			margin-bottom: 5px;
+		}
+		#agencyarrow{
+			display: block;
+			width: 30px;
+			margin: 0 auto;
+			margin-bottom: 80px;
+			z-index: 500;
+			transition-duration: 700ms;
+		}
+
+		#influencer {
+		    margin-top: 40px;
+		    margin-left: 160px;
+		}
+
+		#influencer > h1 {
+			margin-bottom: 6px;
+		}
+		#influencer p {
+			line-height: 17px;
+		}
+
+		#influencer > #work_column1 {
+		    width: 90%;
+		}
+
+		#letsworkdesk{
+			display: none;
+		}
+
+		#letsworkmobile{
+			padding-top: 20px;
+			font-size: 15pt;
+			font-family: "Vesper Libre";
+			color: #FFF;
+			display: block;
+		}
+		#book{
+			margin-top: 260px;
+		}
+		#book_popup{
+			margin-top: 116px;
+			margin-left: 39%;
+			-moz-transform: scaleX(-1);
+	        -o-transform: scaleX(-1);
+	        -webkit-transform: scaleX(-1);
+	        transform: scaleX(-1);
+	        filter: FlipH;
+	        -ms-filter: "FlipH";
+		}
+		#book_popup > span{
+			-moz-transform: scaleX(-1);
+	        -o-transform: scaleX(-1);
+	        -webkit-transform: scaleX(-1);
+	        transform: scaleX(-1);
+	        filter: FlipH;
+	        -ms-filter: "FlipH";
+		}
+
+		#consulting > #work_column1 {
+		    width: 90%;
+		}
+		#rainbow{
+			margin-top: 37%;
+		}
+
+		#personal{
+			max-width: 90%;
+		}
+		#personal > h1 {
+			/*margin-bottom: 30px;*/
+			font-size: 22pt;
+			letter-spacing: 3px;
+		}
+
+		#personal span{
+			color:#2230A4;
+		}
+	}
+
 
 	/* if less than 414px */
 	@media (max-width: 414px) {
@@ -1801,9 +1945,6 @@ p {
 			font-size: 9.5pt;
 			letter-spacing: 0px;
 			color:#2230A4;
-		}
-		#mobiledelete{
-			display: none;
 		}
 	}
 
