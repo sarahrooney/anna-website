@@ -551,6 +551,14 @@ p {
 			font-size: 12pt;
 			text-transform: uppercase;
 			letter-spacing: 2px;
+			line-height: 16px;
+		}
+		#sub a{
+			color: #000;
+			text-decoration: none;
+		}
+		#sub a:hover{
+			color: #F05559;
 		}
 
 		#content{
@@ -1509,6 +1517,10 @@ p {
     color: #E8E8E0;
 }
 
+#letsworkmobile{
+	display: none;
+}
+
 #consulting{
 	margin:auto;
     text-align: left;
@@ -1635,7 +1647,7 @@ p {
 		}
 
 		#agency p {
-			line-height: 15px;
+			line-height: 16px;
 		}
 		#agency > #work_column1 {
 			margin-right: 0px;
@@ -1673,6 +1685,105 @@ p {
 			margin-bottom: 80px;
 			z-index: 500;
 			transition-duration: 700ms;
+		}
+
+		#influencer {
+		    margin-top: 40px;
+		}
+
+		#influencer > h1 {
+			margin-bottom: 6px;
+		}
+		#influencer p {
+			line-height: 17px;
+		}
+
+		#influencer_blueline{
+			display: none;
+		}
+
+		#influencer > #work_column1 {
+		    width: 370px;
+		}
+
+		#letsworkdesk{
+			display: none;
+		}
+
+		#letsworkmobile{
+			padding-top: 20px;
+			font-size: 15pt;
+			font-family: "Vesper Libre";
+			color: #FFF;
+			display: block;
+		}
+
+		#book{
+			margin-top: 280px;
+		}
+		#book_popup{
+			margin-top: 130px;
+			margin-left: 25%;
+			-moz-transform: scaleX(-1);
+	        -o-transform: scaleX(-1);
+	        -webkit-transform: scaleX(-1);
+	        transform: scaleX(-1);
+	        filter: FlipH;
+	        -ms-filter: "FlipH";
+		}
+		#book_popup > span{
+			-moz-transform: scaleX(-1);
+	        -o-transform: scaleX(-1);
+	        -webkit-transform: scaleX(-1);
+	        transform: scaleX(-1);
+	        filter: FlipH;
+	        -ms-filter: "FlipH";
+		}
+
+		#consulting{
+			margin-top: 40px;
+		}
+
+		#consulting > h1 {
+			margin-bottom: 6px;
+		}
+		#consulting p {
+			font-size: 12pt;
+			line-height: 18px;
+			font-family: "Pragati Narrow", sans-serif;
+			color: #2230A4;
+		}
+
+		#consulting_blueline{
+			display: none;
+		}
+
+		#consulting > #work_column1 {
+		    width: 370px;
+		}
+
+		#rainbow{
+			margin-top: 53%;
+		}
+
+		#personal{
+			max-width: 370px;
+		}
+
+		#personal > h1 {
+			margin-bottom: 30px;
+			font-size: 15pt;
+			letter-spacing: 3px;
+		}
+
+		#personal span{
+			margin-right: 25px;
+			font-size: 9.5pt;
+			letter-spacing: 0px;
+			color:#2230A4;
+		}
+		#mobiledelete{
+			display: none;
 		}
 	}
 

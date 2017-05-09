@@ -3,16 +3,143 @@ var mobileMenuIcon = document.querySelector('#mobilemenu');
 var mobileMenuExpand = document.querySelector('#mobilemenuexpand');
 
 mobileMenuIcon.addEventListener ("click", function(){
-	// mobileMenuExpand.style.display = "flex"
 	mobileMenuExpand.style.opacity = "1";
 	mobileMenuExpand.style.marginLeft = "0%"
 });
-
+//CLOSE MOBILE MENU
 var exitMobileMenu = document.querySelector('#exitmobilemenu');
 exitMobileMenu.addEventListener ("click", function(){
  	mobileMenuExpand.style.opacity = "0";
  	mobileMenuExpand.style.marginLeft = "150%"
 });
+var expandedLinks = document.querySelectorAll('#expanded')
+for (var i = 0; i < expandedLinks.length; i++) {
+	expandedLinks[i].addEventListener ("click", function(){
+ 		mobileMenuExpand.style.opacity = "0";
+ 		mobileMenuExpand.style.marginLeft = "150%"
+	});
+};
+//SUB LINK FUNCTIONALITY: 0-3 of var myWorkMenuAppendSpan
+var myWorkMenuAppendSpan = document.querySelectorAll('.myworksub');
+		var myWorkPhoto = document.querySelector('#mywork_photo');
+		var workContainer = document.querySelector('#work_container');
+		var workContainerChildren = document.querySelectorAll('#work_container > section');
+		var agency = document.querySelector('#agency');
+		var influencer = document.querySelector('#influencer');
+myWorkMenuAppendSpan[0].addEventListener("click", function(){
+	mobileMenuExpand.style.opacity = "0";
+ 	mobileMenuExpand.style.marginLeft = "150%"
+	myWork.style.backgroundColor = "#E8DBD2"
+	desktopMenuSection.style.backgroundColor = "#E8DBD2"
+		desktopMenuLink[0].style.color = "#E8DBD2"; //link color
+		desktopMenuLink[0].addEventListener("mouseout", function(){
+			desktopMenuLink[0].style.color = '#E8DBD2';
+		});
+		desktopMenuLink[2].style.color = "#E8DBD2";
+		desktopMenuLink[2].addEventListener("mouseout", function(){
+			desktopMenuLink[2].style.color = '#E8DBD2';
+		});
+	myWorkPhoto.style.backgroundPosition = "0% 55%"
+	agency.style.marginLeft = "0px"
+	upperLeftLogo.setAttribute('src','images/ar_logo_70px.png'); //blue logo
+
+	//book easter egg disappear
+	bookIcon.style.marginLeft = "150%";
+	//rainbow easter egg disappear
+	rainbowIcon.style.marginLeft = "150%";
+	//eye easter egg disappear
+	eyeIcon.style.marginLeft = "150%";
+
+	// planet easter egg
+	planetIcon.style.marginLeft = "72%";
+});
+myWorkMenuAppendSpan[1].addEventListener("click", function(){
+	mobileMenuExpand.style.opacity = "0";
+ 	mobileMenuExpand.style.marginLeft = "150%"
+	myWork.style.backgroundColor = "#2230A4"
+	desktopMenuSection.style.backgroundColor = "#2230A4"
+		desktopMenuLink[0].style.color = "#2230A4"; //link color
+		desktopMenuLink[0].addEventListener("mouseout", function(){
+			desktopMenuLink[0].style.color = '#2230A4';
+		});
+		desktopMenuLink[2].style.color = "#2230A4";
+		desktopMenuLink[2].addEventListener("mouseout", function(){
+			desktopMenuLink[2].style.color = '#2230A4';
+		});
+	myWorkPhoto.style.backgroundPosition = "50% 55%";
+	agency.style.marginLeft = "-119%";
+	upperLeftLogo.setAttribute('src','images/ar_logo_70px_white.png'); //white logo
+
+	//planet easter egg disappear
+	planetIcon.style.marginLeft = "-30%";
+	//rainbow easter egg disappear
+	rainbowIcon.style.marginLeft = "150%";
+	//eye easter egg disappear
+	eyeIcon.style.marginLeft = "150%";
+
+	//book easter egg appear
+	bookIcon.style.marginLeft = "69%";
+});
+myWorkMenuAppendSpan[2].addEventListener("click", function(){
+	mobileMenuExpand.style.opacity = "0";
+ 	mobileMenuExpand.style.marginLeft = "150%"
+	myWork.style.backgroundColor = "#E8DBD2"
+	desktopMenuSection.style.backgroundColor = "#E8DBD2"
+		desktopMenuLink[0].style.color = "#E8DBD2"; //link color
+		desktopMenuLink[0].addEventListener("mouseout", function(){
+			desktopMenuLink[0].style.color = '#E8DBD2';
+		});
+		desktopMenuLink[2].style.color = "#E8DBD2";
+		desktopMenuLink[2].addEventListener("mouseout", function(){
+			desktopMenuLink[2].style.color = '#E8DBD2';
+		});
+	myWorkPhoto.style.backgroundPosition = "100% 55%"
+	agency.style.marginLeft = "-219%";
+	upperLeftLogo.setAttribute('src','images/ar_logo_70px.png'); //blue logo
+
+	//planet easter egg disappear
+	planetIcon.style.marginLeft = "-30%";
+	//book easter egg disappear
+	bookIcon.style.marginLeft = "-30%";
+	//eye easter egg disappear
+	eyeIcon.style.marginLeft = "150%";
+
+	//rainbow easter egg appear
+	rainbowIcon.style.marginLeft = "70%"
+});
+
+myWorkMenuAppendSpan[3].addEventListener("click", function(){
+	mobileMenuExpand.style.opacity = "0";
+ 	mobileMenuExpand.style.marginLeft = "150%"
+	myWork.style.backgroundColor = "#E8E8E0"
+	desktopMenuSection.style.backgroundColor = "#E8E8E0"
+	desktopMenuLink[0].style.color = "#E8E8E0"; //link color
+		desktopMenuLink[0].addEventListener("mouseout", function(){
+			desktopMenuLink[0].style.color = '#E8E8E0';
+		});
+		desktopMenuLink[2].style.color = "#E8E8E0";
+		desktopMenuLink[2].addEventListener("mouseout", function(){
+			desktopMenuLink[2].style.color = '#E8E8E0';
+		});
+	agency.style.marginLeft = "-334%";
+	upperLeftLogo.setAttribute('src','images/ar_logo_70px.png'); //blue logo
+
+	//planet easter egg disappear
+	planetIcon.style.marginLeft = "-30%";
+	//book easter egg disappear
+	bookIcon.style.marginLeft = "-30%";
+	//rainbow easter egg disappear
+	rainbowIcon.style.marginLeft = "-30%";
+
+	//eye easter egg appear
+	// eyeIcon.style.marginLeft = "10%"
+});
+
+/* ---------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+----------------------------------------END MOBILE MENU SECTION---------------------------------
+------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------*/
 
 
 
@@ -53,7 +180,6 @@ var homepage = document.querySelector('#homepage');
 var aboutMe = document.querySelector('#aboutme');
 var myWork = document.querySelector('#mywork');
 var myWorkMenuAppend = document.querySelector('#mywork_append');
-var myWorkMenuAppendSpan = document.querySelectorAll('#mywork_append > span');
 var desktopMenuSection = document.querySelector('#desktop_menu_section');
 var desktopMenuLink = document.querySelectorAll('#menu a');
 
@@ -102,6 +228,12 @@ desktopMenuLink[2].addEventListener("mouseout", function(){
 });
 
 
+
+
+/* ---------------------------------------------------------------------------------------------
+---------------------------------------LOCATION-SPECIIFIC EVENTS--------------------------------
+----------------------------------------------(SCROLLING)---------------------------------------
+----------------------------------------------------------------------------------------------*/
 // SCROLLING
 window.addEventListener("scroll", function(){
 	// console.log(window.scrollY);
@@ -175,7 +307,7 @@ window.addEventListener("scroll", function(){
 		desktopSocialImages[6].setAttribute('src','images/social/yt_pink.png');
 
 		myWorkMenuAppend.style.opacity = "0";
-		for (var i = 0; i < myWorkMenuAppendSpan.length; i++) {
+		for (var i = 4; i <= 7; i++) {
 			myWorkMenuAppendSpan[i].style.marginTop = "-30px";
 		};
 
@@ -205,18 +337,12 @@ window.addEventListener("scroll", function(){
 
 		// MY WORK EXTRA MENU EXPAND
 		myWorkMenuAppend.style.opacity = "1";
-		for (var i = 0; i < myWorkMenuAppendSpan.length; i++) {
+		for (var i = 4; i <= 7; i++) {
 			myWorkMenuAppendSpan[i].style.marginTop = "0px";
 		};
 
 		// MY WORK PHOTO/TEXT SCROLL
-		var myWorkPhoto = document.querySelector('#mywork_photo');
-		var workContainer = document.querySelector('#work_container');
-		var workContainerChildren = document.querySelectorAll('#work_container > section');
-		var agency = document.querySelector('#agency');
-		var influencer = document.querySelector('#influencer');
-
-		myWorkMenuAppendSpan[0].addEventListener("click", function(){
+		myWorkMenuAppendSpan[4].addEventListener("click", function(){
 			myWork.style.backgroundColor = "#E8DBD2"
 			desktopMenuSection.style.backgroundColor = "#E8DBD2"
 				desktopMenuLink[0].style.color = "#E8DBD2"; //link color
@@ -242,7 +368,7 @@ window.addEventListener("scroll", function(){
 			planetIcon.style.marginLeft = "85%";
 		});
 
-		myWorkMenuAppendSpan[1].addEventListener("click", function(){
+		myWorkMenuAppendSpan[5].addEventListener("click", function(){
 			myWork.style.backgroundColor = "#2230A4"
 			desktopMenuSection.style.backgroundColor = "#2230A4"
 				desktopMenuLink[0].style.color = "#2230A4"; //link color
@@ -275,7 +401,7 @@ window.addEventListener("scroll", function(){
 			} 
 		});
 
-		myWorkMenuAppendSpan[2].addEventListener("click", function(){
+		myWorkMenuAppendSpan[6].addEventListener("click", function(){
 			myWork.style.backgroundColor = "#E8DBD2"
 			desktopMenuSection.style.backgroundColor = "#E8DBD2"
 				desktopMenuLink[0].style.color = "#E8DBD2"; //link color
@@ -308,7 +434,7 @@ window.addEventListener("scroll", function(){
 			}
 		});
 
-		myWorkMenuAppendSpan[3].addEventListener("click", function(){
+		myWorkMenuAppendSpan[7].addEventListener("click", function(){
 			myWork.style.backgroundColor = "#E8E8E0"
 			desktopMenuSection.style.backgroundColor = "#E8E8E0"
 			desktopMenuLink[0].style.color = "#E8E8E0"; //link color
@@ -329,20 +455,22 @@ window.addEventListener("scroll", function(){
 			//rainbow easter egg disappear
 			rainbowIcon.style.marginLeft = "-30%";
 
-			//eye easter egg appear
-			// eyeIcon.style.marginLeft = "10%"
-
 			//responsive
 			if(window.innerWidth > 1024){
 				agency.style.marginLeft = "-361%";
-				eyeIcon.style.marginLeft = "10%"
+				eyeIcon.style.marginLeft = "10%" //eye easter egg appear
 			} if(window.innerWidth <= 1024){
 				agency.style.marginLeft = "-340%";
-				eyeIcon.style.marginLeft = "5%"
+				eyeIcon.style.marginLeft = "5%" //eye easter egg appear
 			}
 		});
 	}
 });
+/* ---------------------------------------------------------------------------------------------
+--------------------------------------------------END-------------------------------------------
+---------------------------------------LOCATION-SPECIIFIC EVENTS--------------------------------
+----------------------------------------------(SCROLLING)---------------------------------------
+----------------------------------------------------------------------------------------------*/
 
 
 
@@ -395,19 +523,31 @@ desktopMenuLink[1].addEventListener("click", function(){
 });
 
 
+
+
+/* ---------------------------------------------------------------------------------------------
+-------------------------------------------MOBILE READ MORES------------------------------------
+----------------------------------------------------------------------------------------------*/
 //MOBILE READ MORES :: AGENCY
 var agencyContinue = document.querySelector('#agencymobile');
 var agencyColumnTwo = document.querySelector('#mobile_agency_column2')
 var agencyArrow = document.querySelector('#agencyarrow')
 	agencyArrow.addEventListener("click",function(){
 		if(agencyArrow.getAttribute('src') === "images/scrollarrow_down_pink.png"){
-			agencyColumnTwo.style.maxHeight = "310px";
+			agencyColumnTwo.style.maxHeight = "320px";
 			agencyArrow.setAttribute('src','images/scrollarrow_up_pink.png');
 		} else if(agencyArrow.getAttribute('src') === "images/scrollarrow_up_pink.png"){
 			agencyColumnTwo.style.maxHeight = "0px";
 			agencyArrow.setAttribute('src','images/scrollarrow_down_pink.png');
 		}
 	});
+/* ---------------------------------------------------------------------------------------------
+------------------------------------------------END---------------------------------------------
+-------------------------------------------MOBILE READ MORES------------------------------------
+------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------*/
+
+
 
 
 // FLOWER EASTER EGG
