@@ -1114,6 +1114,35 @@ p {
 			width: 37%;
 		}
 
+		#mobile_abt_column2{
+			max-height: 0px;
+			overflow-y: hidden;
+			transition-duration: 700ms;
+		}
+
+		#abtmobile{
+			display: block;
+			margin-top: 10px;
+		}
+		#abtmobile h1{
+			font-size: 18px;
+			letter-spacing: 5px;
+			margin-bottom: 5px;
+			text-align: center;
+		}
+		#abtarrow{
+			display: block;
+			width: 30px;
+			margin: 0 auto;
+			z-index: 500;
+			transition-duration: 700ms;
+		}
+
+		#mobile_cv_resume{
+			margin-left: 75%;
+			padding-bottom: 10px;
+		}
+
 		#camera{
 			position: absolute;
 			margin-top: 5px;
@@ -1121,7 +1150,7 @@ p {
 		}
 
 		#cv_resume{
-			margin-left: 80%;
+			display: none;
 		}
 	}
 
@@ -1153,9 +1182,6 @@ p {
 			font-size: 27pt;
 			letter-spacing: 15px;
 		}
-		#cv_resume{
-			margin-left: 75%;
-		}
 	}
 
 	@media (max-width: 414px) {
@@ -1186,9 +1212,6 @@ p {
 		}
 		h3{
 			font-size: 14pt;
-		}
-		#cv_resume{
-			margin-left: 72%;
 		}
 	}	
 
@@ -1289,9 +1312,6 @@ p {
 		}
 		h3{
 			font-size: 12pt;
-		}
-		#cv_resume{
-			margin-left: 70%;
 		}
 	}
 
@@ -1784,6 +1804,137 @@ p {
 		}
 		#mobiledelete{
 			display: none;
+		}
+	}
+
+	/* if less than 375px */
+	@media (max-width: 375px){
+		#agency > h1 {
+			margin-left: 10px;
+			font-size: 24pt;
+			letter-spacing: 9px;
+		}
+		#agency > #work_column1{
+   			width: 340px;
+   		}
+   		#mobile_agency_column2{
+   			max-width: 340px;
+   		}
+
+		#influencer > h1 {
+			margin-top: -20px;
+			margin-left: -12px;
+			font-size: 24pt;
+			letter-spacing: 9px;
+		}
+   		#influencer > #work_column1 {
+		    width: 340px;
+		    margin-left: -12px;
+		}
+
+		#book_popup{
+			margin-left: 19%;
+		}
+
+		#consulting{
+			margin-top: 20px;
+		}
+		#consulting > h1 {
+			margin-left: -12px;
+			font-size: 24pt;
+			letter-spacing: 9px;
+		}
+		#consulting > #work_column1 {
+		    width: 340px;
+		    margin-left: -12px;
+		}
+
+		#personal{
+			max-width: 340px;
+		}
+	}
+
+	/* if less than 360px */
+	@media (max-width: 360px){
+		#mywork_photo{
+			height: 230px;
+		}
+		#agency > #work_column1{
+			width: 320px;
+   		}
+   		#mobile_agency_column2{
+   			max-width: 320px;
+   			margin-left: 20px;
+   		}
+
+   		#influencer > #work_column1 {
+		    width: 320px;
+		    margin-left: -10px;
+		}
+
+		#consulting > #work_column1{
+			width: 320px;
+		}
+	}
+
+	/* if less than 320px */
+	@media (max-width: 320px){
+		#mywork_photo{
+			height: 200px;
+		}
+		#agency > h1 {
+			margin-left: 0px;
+			font-size: 23pt;
+			letter-spacing: 8px;
+		}
+		#agency p{
+			font-size: 9pt;
+		}
+		#agency h2{
+			font-size: 12.2pt;
+		}
+		#agency > #work_column1{
+			width: 300px;
+   		}
+   		#mobile_agency_column2{
+   			max-width: 300px;
+   			margin-left: 10px;
+   		}
+   		#planet_popup{
+			margin-left: 23%;
+		}
+
+		#influencer > h1 {
+			margin-left: -25px;
+			font-size: 23pt;
+			letter-spacing: 8px;
+		}
+		#influencer p{
+			font-size: 9pt;
+		}
+   		#influencer > #work_column1 {
+		    width: 300px;
+		    margin-left: -29px;
+		}
+		#book_popup{
+			margin-left: 10%;
+		}
+
+		#consulting > h1 {
+			margin-left: -25px;
+			font-size: 23pt;
+			letter-spacing: 8px;
+		}
+		#consulting p{
+			font-size: 12.2pt;
+		}
+		#consulting > #work_column1{
+			width: 300px;
+			margin-left: -29px;
+		}
+
+		#personal{
+			max-width: 300px;
 		}
 	}
 

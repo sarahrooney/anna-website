@@ -105,7 +105,7 @@ myWorkMenuAppendSpan[2].addEventListener("click", function(){
 	eyeIcon.style.marginLeft = "150%";
 
 	//rainbow easter egg appear
-	rainbowIcon.style.marginLeft = "70%"
+	rainbowIcon.style.marginLeft = "69%"
 });
 
 myWorkMenuAppendSpan[3].addEventListener("click", function(){
@@ -528,13 +528,27 @@ desktopMenuLink[1].addEventListener("click", function(){
 /* ---------------------------------------------------------------------------------------------
 -------------------------------------------MOBILE READ MORES------------------------------------
 ----------------------------------------------------------------------------------------------*/
+//MOBILE READ MORES :: ABOUT
+var aboutContinue = document.querySelector('#abtmobile');
+var aboutColumnTwo = document.querySelector('#mobile_abt_column2')
+var aboutArrow = document.querySelector('#abtarrow')
+	aboutArrow.addEventListener("click",function(){
+		if(aboutArrow.getAttribute('src') === "images/scrollarrow_down_pink.png"){
+			aboutColumnTwo.style.maxHeight = "530px";
+			aboutArrow.setAttribute('src','images/scrollarrow_up_pink.png');
+		} else if(aboutArrow.getAttribute('src') === "images/scrollarrow_up_pink.png"){
+			aboutColumnTwo.style.maxHeight = "0px";
+			aboutArrow.setAttribute('src','images/scrollarrow_down_pink.png');
+		}
+	});
+
 //MOBILE READ MORES :: AGENCY
 var agencyContinue = document.querySelector('#agencymobile');
 var agencyColumnTwo = document.querySelector('#mobile_agency_column2')
 var agencyArrow = document.querySelector('#agencyarrow')
 	agencyArrow.addEventListener("click",function(){
 		if(agencyArrow.getAttribute('src') === "images/scrollarrow_down_pink.png"){
-			agencyColumnTwo.style.maxHeight = "320px";
+			agencyColumnTwo.style.maxHeight = "330px";
 			agencyArrow.setAttribute('src','images/scrollarrow_up_pink.png');
 		} else if(agencyArrow.getAttribute('src') === "images/scrollarrow_up_pink.png"){
 			agencyColumnTwo.style.maxHeight = "0px";
