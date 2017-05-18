@@ -43,17 +43,17 @@
 
 		<div id="mobilemenuexpand">
 			<img src="images/mobilemenu_exit.png" id="exitmobilemenu">
-			<div id="expanded" class="aboutme"><a href="#aboutme">about me</a></div>			
-			<div id="expanded"><a href="#">my work</a></div>
-				<div id="sub">agency</div>
-				<div id="sub">influencer</div>
-				<div id="sub">consulting</div>
-				<div id="sub">personal</div>
-			<div id="expanded"><a href="#">hire me</a></div>
-				<div id="sub">consulting</div>
-				<div id="sub">influencer</div>
-				<div id="sub">speaking</div>
-				<div id="sub">how to reach me</div>
+			<div class="aboutme expanded"><a href="#aboutme">about me</a></div>			
+			<div class="expanded"><a href="#mywork">my work</a></div>
+				<div id="" class="myworksub sub"><a href="#mywork">agency</a></div>
+				<div id="" class="myworksub sub"><a href="#mywork">influencer</a></div>
+				<div id="" class="myworksub sub"><a href="#mywork">consulting</a></div>
+				<div id="" class="myworksub sub"><a href="#mywork">personal</a></div>
+			<div class="expanded"><a href="#">hire me</a></div>
+				<div id="" class="hiremesub sub"><a href="#">consulting</a></div>
+				<div id="" class="hiremesub sub"><a href="#">influencer</a></div>
+				<div id="" class="hiremesub sub"><a href="#">speaking</a></div>
+				<div id="" class="hiremesub sub"><a href="#">how to reach me</a></div>
 		</div>
 
 
@@ -61,9 +61,16 @@
 			<a href="#"><img src="images/face_logo.png" id="facelogo"></a>
 
 			<div id="menu">
-				<div class="menulink"><a href="javascript:">about me</a></div>
-				<div class="menulink"><a href="#">my work</a></div>
-				<div class="menulink"><a href="#">hire me</a></div>
+				<div><a href="javascript:" class="menulink_peachy">about me</a></div>
+				<div><a href="javascript:" class="menulink_peachy">my work</a></div>
+				<div><a href="#"  class="menulink_peachy">hire me</a></div>
+			</div>
+
+			<div id="mywork_append">
+				<span class="myworksub des"><a href="javascript:">agency</a></span>
+				<span class="myworksub des"><a href="javascript:">influencer</a></span>
+				<span class="myworksub des"><a href="javascript:">consulting</a></span>
+				<span class="myworksub des"><a href="javascript:">personal</a></span>
 			</div>
 
 			<div id="mobilemenu">
@@ -124,7 +131,7 @@
 
 		<section id="aboutme">
 
-			<div id="abt_placeholder"></div>
+			<!-- <div id="abt_placeholder"></div> -->
 
 			<div id="about_photo"></div>
 
@@ -152,12 +159,18 @@
 			<div id="mobile_abt_container">
 				<h1>about me</h1> <div id="abt_blueline"></div>
 			    	<h2>I make work work for the Internet. At school they called me a new media artist, on YouTube they call me a creator, on Instagram they call me an influencer, and in the advertising world they call me a strategist. I’ve gained an audience of over 200,000 across online platforms where I create video, photography, text and code to share vlogs, tutorials, internet and social media art that encourages other young women to be critical of and take part in shaping the world around us.</h2>
-					
-					<p>My work is heavily informed by my online community of young girls and their feedback, as well as my background in fine art photography, video and new media—having received my BFA from the School of the Art Institute of Chicago in 2014. My passion for communicating in contemporary ways brought me into the advertising world with Havas Chicago, where I started working as an intern in 2014, and now work as a Senior Strategist across multiple brands.</p>
+					<div id="abtmobile">
+				    	<img src="images/cv-resume.png" id="mobile_cv_resume">
+					    	<h1>continue reading</h1>
+						    	<div id="mobile_abt_column2">
+							    	<p>My work is heavily informed by my online community of young girls and their feedback, as well as my background in fine art photography, video and new media—having received my BFA from the School of the Art Institute of Chicago in 2014. My passion for communicating in contemporary ways brought me into the advertising world with Havas Chicago, where I started working as an intern in 2014, and now work as a Senior Strategist across multiple brands.</p>
 
-					<p>My brand experience at Havas includes Reynolds Consumer Products, AutoZone, Ragú, Bertolli, and Kmart. In addition to my agency work, I’ve worked as a social influencer for the past five years and have worked with brands such as e.l.f. Cosmetics, Graze, and SEE Eyewear to create lifestyle content. I offer consulting and strategic guidance as services, and have helped start-ups and brands navigate their presence online. I enjoy public speaking and have been invited to speak at conferences, universities, and organizations in the US and abroad.</p>
+									<p>My brand experience at Havas includes Reynolds Consumer Products, AutoZone, Ragú, Bertolli, and Kmart. In addition to my agency work, I’ve worked as a social influencer for the past five years and have worked with brands such as e.l.f. Cosmetics, Graze, and SEE Eyewear to create lifestyle content. I offer consulting and strategic guidance as services, and have helped start-ups and brands navigate their presence online. I enjoy public speaking and have been invited to speak at conferences, universities, and organizations in the US and abroad.</p>
 
-					<h3>Let’s do something awesome together</h3>
+									<h3>Let’s do something awesome together</h3>
+								</div>
+					   	<img src="images/scrollarrow_down_pink.png" id="abtarrow">
+					</div>
 			</div>
 
 
@@ -166,7 +179,154 @@
 		</section>
 
 
-		<script type="text/javascript" src="js/scripts.js"></script>
+		<section id="mywork">
+			
+			<div id="mywork_placeholder"></div>
+
+
+			<div id="mywork_agency">
+
+				<div id="mywork_photo"></div>
+
+				<!-- <div id="planet_popup"><img src="images/planeticonpopup.png"><span>I’m originally from Fort Wayne, Indiana.</span></div>
+				<img src="images/planet_easteregg.png" id="planet"> -->
+				<!-- <div id="book_popup"><img src="images/bookiconpopup.png"><span>My dad taught me how to build my own website when I was 13. I refined my html/css skills by coding custom profile themes for my friends on Neopets and Myspace. I wish more social media platforms (like tumblr!) allowed for html/css play.</span></div>
+				<img src="images/book_easteregg.png" id="book"> -->
+				<!-- <img src="images/rainbow_easteregg.png" id="rainbow"> -->
+				<!-- <img src="images/eye_easteregg.png" id="eye"> -->
+
+				<div id="work_container">
+					<section id="agency">
+						<div id="planet_popup"><img src="images/planeticonpopup.png"><span>I’m originally from Fort Wayne, Indiana.</span></div>
+						<img src="images/planet_easteregg.png" id="planet">
+						<h1>agency work <div id="agency_blueline"></div></h1>
+					    <div id="work_column1">
+					    	<h2>Verticals I’ve focused in: Retail / CPG / New Business</h2>
+							<p>• Created visibility for agency through thought-leadership in speaking and events</p>
+							<p>• Taught social media 101 classes for our employees</p>
+							<p>• Created social best practice guides and frequent social platform update documents for internal team and our clients</p>
+							<p>• Developed an Instagram Relaunch Strategy and Creative Guideline Booklet that doubled Kmart’s Instagram following in one year (from 40K to 80K)</p>
+							<p>• Created and executed 2016 Snapchat Strategy for Kmart’s social team. I launched their Snapchat account, creating content and managing content creators for the brand. (I will send a video to include for this bullet)</p>
+							<p>• Created and executed Earned Social Strategy for Kmart’s social team</p>
+					    </div>
+					    <div id="agencymobile">
+					    	<h1>continue reading</h1>
+						    	<div id="mobile_agency_column2">
+							    	<p>• Provided strategic insight and guidance for 2016 Social Creative Guidelines for Kmart’s social team</p>
+									<p>• Worked under tight deadlines (and drank a lot of coffee) to create social media strategies for new business pitches</p>
+									<p>• Created and executed AutoZone Customer Care Plan and trained their Customer Care Team</p>
+									<p>• Reported social data and sentiment on a weekly, monthly, and quarterly basis for AutoZone, using social tools such as Shoutlet and Unmetric</p>
+									<p>• Provided strategic and creative guidance to relaunch Ragu's Instagram</p>
+									<p>• Launched an Instagram influencer campaign for Ragu in partnership with social currency app Popular Pays</p>
+									<p>• Helped develop Hefty’s 2016 Social Strategy</p>
+								</div>
+					    	<img src="images/scrollarrow_down_pink.png" id="agencyarrow">
+					    </div>
+					    <div id="work_column2">
+					    	<p>• Provided strategic insight and guidance for 2016 Social Creative Guidelines for Kmart’s social team</p>
+							<p>• Worked under tight deadlines (and drank a lot of coffee) to create social media strategies for new business pitches</p>
+							<p>• Created and executed AutoZone Customer Care Plan and trained their Customer Care Team</p>
+							<p>• Reported social data and sentiment on a weekly, monthly, and quarterly basis for AutoZone, using social tools such as Shoutlet and Unmetric</p>
+							<p>• Provided strategic and creative guidance to relaunch Ragu's Instagram</p>
+							<p>• Launched an Instagram influencer campaign for Ragu in partnership with social currency app Popular Pays</p>
+							<p>• Helped develop Hefty’s 2016 Social Strategy</p>
+						</div>
+					</section>
+					<section id="influencer">
+						<div id="book_popup"><img src="images/bookiconpopup.png"><span>My dad taught me how to build my own website when I was 13. I refined my html/css skills by coding custom profile themes for my friends on Neopets and Myspace. I wish more social media platforms (like tumblr!) allowed for html/css play.</span></div>
+						<img src="images/book_easteregg.png" id="book">
+						<h1>influencer <div id="influencer_blueline"></div></h1>
+					    <div id="work_column1">
+					    	<p>As someone working in both the agency world and the influencer world, I’ve developed a unique point of view of how to work with influencers and brands in a collaborative way that benefits both parties and engages my audience in a real way. I understand a brand’s needs and also know what really resonates with my audience. I like to collaborate with brand teams to come up with the most interesting, authentic way we can convey their goals and messages to my amazing audience of young women. <span id="letsworkdesk">Let’s work together!</span></p>
+					    	<span id="letsworkmobile">Let’s work together!</span>
+					    </div>
+					</section>
+					<section id="consulting">
+						<img src="images/rainbow_easteregg.png" id="rainbow">
+						<h1>consulting <div id="consulting_blueline"></div></h1>
+					    <div id="work_column1">
+							<p>I’ve helped entrepreneurs, students, startups and organizations navigate the online world and find unique ways to communicate to their target audiences and come up with creative ideas that belong on the internet.</p>
+					    </div>
+					</section>
+					<section id="personal">
+						<img src="images/eye_easteregg.png" id="eye">
+						<h1>I LOVE YOU SOCIAL MEDIA BUT YOU'RE BRINGING ME DOWN</h1>
+					    <div id="work_column1">
+							<p><span>social media</span><span>girl</span><span>thumb</span><span>youtube</span><span>make up</span></p>
+							<p>I got a kindle and talk about my dysfunctional relationship with my body and then answer questions from Instagram. HOW FUN. thx for watching. SUBSCRIBE if you wish i had better false lashes!!!</p>
+					    </div>
+					</section>
+				</div>
+
+				<div id="mobile_work_container">
+					<h1>agency work</h1> <div id="work_blueline"></div>
+				    	<h2>Verticals I’ve focused in: Retail / CPG / New Business</h2>
+						<p>• Created visibility for agency through thought-leadership in speaking and events</p>
+						<p>• Taught social media 101 classes for our employees</p>
+						<p>• Created social best practice guides and frequent social platform update documents for internal team and our clients</p>
+						<p>• Developed an Instagram Relaunch Strategy and Creative Guideline Booklet that doubled Kmart’s Instagram following in one year (from 40K to 80K)</p>
+						<p>• Created and executed 2016 Snapchat Strategy for Kmart’s social team. I launched their Snapchat account, creating content and managing content creators for the brand. (I will send a video to include for this bullet)</p>
+						<p>• Created and executed Earned Social Strategy for Kmart’s social team</p>
+						<p>• Provided strategic insight and guidance for 2016 Social Creative Guidelines for Kmart’s social team</p>
+						<p>• Worked under tight deadlines (and drank a lot of coffee) to create social media strategies for new business pitches</p>
+						<p>• Created and executed AutoZone Customer Care Plan and trained their Customer Care Team</p>
+						<p>• Reported social data and sentiment on a weekly, monthly, and quarterly basis for AutoZone, using social tools such as Shoutlet and Unmetric</p>
+						<p>• Provided strategic and creative guidance to relaunch Ragu's Instagram</p>
+						<p>• Launched an Instagram influencer campaign for Ragu in partnership with social currency app Popular Pays</p>
+						<p>• Helped develop Hefty’s 2016 Social Strategy</p>
+				</div>
+
+			</div>
+
+		</section>
+
+
+		<section id="hireme">
+
+			<div id="hireme_placeholder"></div>
+
+
+			<div id="hireme_container">
+
+				<!-- <div id="hireme_consulting"></div>-->
+
+				<!-- <div id="hireme_influencer"></div> -->
+
+				<div id="consulting_tab">CONSULTING</div>
+				<div id="hireme_consulting">
+
+					<div id="consulting_block1">
+						<p>SOCIAL MEDIA AUDIT:</p> <img src="images/speaking_hashtag.png" id="hashtag">
+						<p>If social media was easy, everyone would have a kick ass social media presence. I’m here to make it easier for you. I’ll start with a thorough analysis of your social channels, evaluating everything from what’s working with your audience to the overall cohesiveness of your presence. After I assess, I’ll identify 3 main areas of opportunity so your brand can really flourish.</p>
+					</div>
+
+					<div id="consulting_block2">
+						<p>INFLUENCER STRATEGY:</p> <img src="images/influencer_hearts.png" id="influ_hearts">
+						<p>Partnering with a trusted voice within a community online can be a great strategy for a brand. As someone who works actively in both the influencer world as well as the agency world, I’ve developed a unique, nuanced perspective on brands can best collaborate with influencers in a way that’s rewarding for all parties. I will help identify if an influencer makes sense for your brand’s goals, and develop a strategy ranging from long-term partnerships to short-term reach-driven campaigns.</p>
+					</div>
+
+					<div id="consulting_block3">
+						<p>COMMUNITY MANAGEMENT / CUSTOMER CARE STRATEGY:</p> <img src="images/customercare_bell.png" id="bell">
+						<p>Not only do they serve as the public-facing voice of your accounts, community managers create authentic 1:1 engagements with a community, deliver insights around content performance, and drive business objectives on the daily.</p>
+					</div>
+
+					<div id="consulting_block4">
+						<p>SOCIAL MEDIA STRATEGY:</p> <img src="images/heart_glasses.png" id="heart_glasses">
+						<p>A full-fledged social media strategy starts out with my social media audit. I’ll create a social strategy for your brand that aligns with your business objectives, identifying areas of opportunity to pursue your goals, what channels make the most sense, and how to activate your intended audience.</p>
+					</div>
+				</div>
+
+				<!-- <div id="how_to_reach_me"></div> -->
+
+			</div>
+
+		</section>
+
+
+		<!-- <script type="text/javascript" src="js/scripts.js"></script> -->
+		<script type="text/javascript" src="js/everything_else.js"></script>
+		<script type="text/javascript" src="js/mobile_menu.js"></script>
+		<script type="text/javascript" src="js/desktop_menu.js"></script>
 
 	</body>
 
