@@ -12,7 +12,7 @@ exitMobileMenu.addEventListener ("click", function(){
  	mobileMenuExpand.style.opacity = "0";
  	mobileMenuExpand.style.marginLeft = "150%"
 });
-var expandedLinks = document.querySelectorAll('#expanded')
+var expandedLinks = document.querySelectorAll('.expanded')
 for (var i = 0; i < expandedLinks.length; i++) {
 	expandedLinks[i].addEventListener ("click", function(){
  		mobileMenuExpand.style.opacity = "0";
@@ -179,6 +179,7 @@ homepageLogosSwitch();
 var homepage = document.querySelector('#homepage');
 var aboutMe = document.querySelector('#aboutme');
 var myWork = document.querySelector('#mywork');
+var hireMe = document.querySelector('#hireme');
 var myWorkMenuAppend = document.querySelector('#mywork_append');
 var desktopMenuSection = document.querySelector('#desktop_menu_section');
 var desktopMenuLink = document.querySelectorAll('#menu a');
@@ -187,45 +188,60 @@ for (var i = 0; i < desktopMenuLink.length; i++) {
 	desktopMenuLink[i].style.color = "#E8DBD2";
 };
 
+function menuMouseOver(){
+	this.style.color = "#F05559";
+	this.style.textShadow = "none";
+}
+function menuMouseOut(){
+	this.style.color = "#E8DBD2";
+	this.style.textShadow = "-1px -1px 0 #F05559, 1px -1px 0 #F05559, -1px 1px 0 #F05559, 1px 1px 0 #F05559";
+}
+
 // MENU HOVER
-desktopMenuLink[0].addEventListener("mouseover", function(){
-	for (var i = 0; i < desktopMenuLink.length; i++) {
-		desktopMenuLink[0].style.color = "#F05559";
-		desktopMenuLink[0].style.textShadow = "none"
-	}
-});
-desktopMenuLink[0].addEventListener("mouseout", function(){
-	for (var i = 0; i < desktopMenuLink.length; i++) {
+for (var i = 0; i < desktopMenuLink.length; i++) {
+	desktopMenuLink[i].addEventListener("mouseover", menuMouseOver);
+	desktopMenuLink[i].addEventListener("mouseout", menuMouseOut);
+}
+
+
+
+function mouseoutMenu(){
+	if (window.scrollY >= homepage.offsetTop && window.scrollY < aboutMe.offsetTop) {
+
 		desktopMenuLink[0].style.color = "#E8DBD2";
-		desktopMenuLink[0].style.textShadow = "-1px -1px 0 #F05559, 1px -1px 0 #F05559, -1px 1px 0 #F05559, 1px 1px 0 #F05559";
-	}
-});
+		desktopMenuLink[0].style.textShadow = "-1px -1px 0 #F05559, 1px -1px 0 #F05559, -1px 1px 0 #F05559, 1px 1px 0 #F05559";	
 
-desktopMenuLink[1].addEventListener("mouseover", function(){
-	for (var i = 0; i < desktopMenuLink.length; i++) {
-		desktopMenuLink[1].style.color = "#F05559";
-		desktopMenuLink[1].style.textShadow = "none"
-	}
-});
-desktopMenuLink[1].addEventListener("mouseout", function(){
-	for (var i = 0; i < desktopMenuLink.length; i++) {
 		desktopMenuLink[1].style.color = "#E8DBD2";
-		desktopMenuLink[1].style.textShadow = "-1px -1px 0 #F05559, 1px -1px 0 #F05559, -1px 1px 0 #F05559, 1px 1px 0 #F05559";
-	}
-});
+		desktopMenuLink[1].style.textShadow = "-1px -1px 0 #F05559, 1px -1px 0 #F05559, -1px 1px 0 #F05559, 1px 1px 0 #F05559";	
 
-desktopMenuLink[2].addEventListener("mouseover", function(){
-	for (var i = 0; i < desktopMenuLink.length; i++) {
-		desktopMenuLink[2].style.color = "#F05559";
-		desktopMenuLink[2].style.textShadow = "none"
-	}
-});
-desktopMenuLink[2].addEventListener("mouseout", function(){
-	for (var i = 0; i < desktopMenuLink.length; i++) {
 		desktopMenuLink[2].style.color = "#E8DBD2";
+		desktopMenuLink[2].style.textShadow = "-1px -1px 0 #F05559, 1px -1px 0 #F05559, -1px 1px 0 #F05559, 1px 1px 0 #F05559";	
+
+	} else if(window.scrollY >= aboutMe.offsetTop && window.scrollY < myWork.offsetTop) {
+	
+		desktopMenuLink[0].style.color = '#F05559';
+		desktopMenuLink[0].style.textShadow = "none";
+
+		desktopMenuLink[1].style.color = "#E8E8E0";
+		desktopMenuLink[1].style.textShadow = "-1px -1px 0 #F05559, 1px -1px 0 #F05559, -1px 1px 0 #F05559, 1px 1px 0 #F05559";
+
+		desktopMenuLink[2].style.color = "#E8E8E0";
 		desktopMenuLink[2].style.textShadow = "-1px -1px 0 #F05559, 1px -1px 0 #F05559, -1px 1px 0 #F05559, 1px 1px 0 #F05559";
+	
+	} else if(window.scrollY >= myWork.offsetTop){
+
+		desktopMenuLink[0].style.color = '#E8DBD2';
+		desktopMenuLink[0].style.textShadow = "-1px -1px 0 #F05559, 1px -1px 0 #F05559, -1px 1px 0 #F05559, 1px 1px 0 #F05559";
+
+		desktopMenuLink[1].style.color = '#F05559';
+		desktopMenuLink[1].style.textShadow = "none";
+
 	}
-});
+}
+
+for (var i = 0; i < desktopMenuLink.length; i++) {
+	desktopMenuLink[i].addEventListener("mouseout", mouseoutMenu);
+};
 
 
 
@@ -251,12 +267,6 @@ window.addEventListener("scroll", function(){
 
 		desktopMenuLink[0].setAttribute('class','');
 		desktopMenuLink[0].style.textShadow = "-1px -1px 0 #F05559, 1px -1px 0 #F05559, -1px 1px 0 #F05559, 1px 1px 0 #F05559";
-		desktopMenuLink[0].addEventListener("mouseout", function(){
-			for (var i = 0; i < desktopMenuLink.length; i++) {
-				desktopMenuLink[0].style.color = "#E8DBD2";
-				desktopMenuLink[0].style.textShadow = "-1px -1px 0 #F05559, 1px -1px 0 #F05559, -1px 1px 0 #F05559, 1px 1px 0 #F05559";
-			}
-		});
 
 		upperLeftLogo.setAttribute('src','images/face_logo.png');
 
@@ -281,19 +291,9 @@ window.addEventListener("scroll", function(){
 		desktopMenuLink[0].setAttribute('class','currentsection');
 		desktopMenuLink[0].style.color = "#F05559";
 		desktopMenuLink[0].style.textShadow = "none";
-		desktopMenuLink[0].addEventListener("mouseout", function(){
-			desktopMenuLink[0].style.color = '#F05559';
-			desktopMenuLink[0].style.textShadow = "none";
-		});
 
 		desktopMenuLink[1].setAttribute('class','');
 		desktopMenuLink[1].style.textShadow = "-1px -1px 0 #F05559, 1px -1px 0 #F05559, -1px 1px 0 #F05559, 1px 1px 0 #F05559";
-		desktopMenuLink[1].addEventListener("mouseout", function(){
-			for (var i = 1; i < desktopMenuLink.length; i++) {
-				desktopMenuLink[1].style.color = "#E8DBD2";
-				desktopMenuLink[1].style.textShadow = "-1px -1px 0 #F05559, 1px -1px 0 #F05559, -1px 1px 0 #F05559, 1px 1px 0 #F05559";
-			}
-		});
 
 		upperLeftLogo.setAttribute('src','images/ar_logo_70px.png');
 
@@ -307,15 +307,15 @@ window.addEventListener("scroll", function(){
 		desktopSocialImages[6].setAttribute('src','images/social/yt_pink.png');
 
 		myWorkMenuAppend.style.opacity = "0";
+		myWorkMenuAppend.style.visibility = "hidden";
 		for (var i = 4; i <= 7; i++) {
-			myWorkMenuAppendSpan[i].style.marginTop = "-30px";
+			myWorkMenuAppendSpan[i].style.marginTop = "-50px";
 		};
 
-	} else if(window.scrollY >= myWork.offsetTop){
+	} else if(window.scrollY >= myWork.offsetTop && window.scrollY < hireMe.offsetTop){
 
 		// MY WORK MENU
-		var myWorkMenuColor = "#E8DBD2";
-		desktopMenuSection.style.backgroundColor = myWorkMenuColor;
+		desktopMenuSection.style.backgroundColor = "#E8DBD2";
 
 		for (var i = 0; i < desktopMenuLink.length; i++) {
 			desktopMenuLink[i].style.color = "#E8DBD2";
@@ -323,20 +323,14 @@ window.addEventListener("scroll", function(){
 
 		desktopMenuLink[0].setAttribute('class','');
 		desktopMenuLink[0].style.textShadow = "-1px -1px 0 #F05559, 1px -1px 0 #F05559, -1px 1px 0 #F05559, 1px 1px 0 #F05559";
-		desktopMenuLink[0].addEventListener("mouseout", function(){
-			desktopMenuLink[0].style.color = '#E8DBD2';
-			desktopMenuLink[0].style.textShadow = "-1px -1px 0 #F05559, 1px -1px 0 #F05559, -1px 1px 0 #F05559, 1px 1px 0 #F05559";
-		});
+
 		desktopMenuLink[1].setAttribute('class','currentsection');
 		desktopMenuLink[1].style.color = "#F05559";
 		desktopMenuLink[1].style.textShadow = "none";
-		desktopMenuLink[1].addEventListener("mouseout", function(){
-			desktopMenuLink[1].style.color = '#F05559';
-			desktopMenuLink[1].style.textShadow = "none";
-		});
 
 		// MY WORK EXTRA MENU EXPAND
 		myWorkMenuAppend.style.opacity = "1";
+		myWorkMenuAppend.style.visibility = "visible";
 		for (var i = 4; i <= 7; i++) {
 			myWorkMenuAppendSpan[i].style.marginTop = "0px";
 		};
@@ -349,10 +343,10 @@ window.addEventListener("scroll", function(){
 				desktopMenuLink[0].addEventListener("mouseout", function(){
 					desktopMenuLink[0].style.color = '#E8DBD2';
 				});
-				desktopMenuLink[2].style.color = "#E8DBD2";
-				desktopMenuLink[2].addEventListener("mouseout", function(){
-					desktopMenuLink[2].style.color = '#E8DBD2';
-				});
+				// desktopMenuLink[2].style.color = "#E8DBD2";
+				// desktopMenuLink[2].addEventListener("mouseout", function(){
+				// 	desktopMenuLink[2].style.color = '#E8DBD2';
+				// });
 			myWorkPhoto.style.backgroundPosition = "0% 55%"
 			agency.style.marginLeft = "0px"
 			upperLeftLogo.setAttribute('src','images/ar_logo_70px.png'); //blue logo
@@ -464,6 +458,20 @@ window.addEventListener("scroll", function(){
 				eyeIcon.style.marginLeft = "5%" //eye easter egg appear
 			}
 		});
+	} else if(window.scrollY >= hireMe.offsetTop){
+		// MENU
+		desktopMenuSection.style.backgroundColor = "#E8E8E0";
+
+		for (var i = 0; i < desktopMenuLink.length; i++) {
+			desktopMenuLink[i].style.color = "#E8E8E0";
+		};
+
+		// EXTRA MENU HIDE
+		myWorkMenuAppend.style.opacity = "0";
+		myWorkMenuAppend.style.visibility = "hidden";
+		for (var i = 4; i <= 7; i++) {
+			myWorkMenuAppendSpan[i].style.marginTop = "-50px";
+		};
 	}
 });
 /* ---------------------------------------------------------------------------------------------

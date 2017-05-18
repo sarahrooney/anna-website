@@ -23,6 +23,10 @@ progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[ty
 canvas{display:inline-block}template{display:none}[hidden]{display:none}
 
 
+#hireme_container:before {
+	content: "hello";
+}
+
 /*-------------------GENERAL */
 
 body,html{
@@ -101,6 +105,7 @@ p {
 
 #mywork_append{
 	opacity: 0;
+	visibility: hidden;
 	width: 400px;
 	display: flex;
 	margin: 0 auto;
@@ -112,7 +117,7 @@ p {
 }
 
 #mywork_append > span{
-	margin-top: -30px;
+	margin-top: -60px;
 	margin-right: 30px;
 	padding-top: 13px;
 	margin-bottom: -15px;
@@ -223,19 +228,51 @@ p {
 	margin-left: 40px;
 	margin-right: 40px;
 	font-family: "Changa One", sans-serif;
-	color: #E8DBD2;
 	font-size: 21pt;
 	text-transform: uppercase;
 	text-decoration: none;
 	letter-spacing: 2px;
-	/* line text */
-  	text-shadow:
+    transition-property: color, text-shadow;
+    transition-duration: 700ms;
+}
+
+.menulink_peachy{
+	color: #E8DBD2;
+	text-shadow:
    	-1px -1px 0 #F05559,  
     1px -1px 0 #F05559,
     -1px 1px 0 #F05559,
     1px 1px 0 #F05559;
-    transition-property: color, text-shadow;
-    transition-duration: 700ms;
+}
+.menulink_peachy:hover{
+	color: #F05559;
+	text-shadow: none;
+}
+
+.menulink_beige{
+	color: #E8E8E0;
+	text-shadow:
+   	-1px -1px 0 #F05559,  
+    1px -1px 0 #F05559,
+    -1px 1px 0 #F05559,
+    1px 1px 0 #F05559;
+}
+.menulink_beige:hover{
+	color: #F05559;
+	text-shadow: none;
+}
+
+.menulink_blue{
+	color: #2230A4;
+	text-shadow:
+   	-1px -1px 0 #F05559,  
+    1px -1px 0 #F05559,
+    -1px 1px 0 #F05559,
+    1px 1px 0 #F05559;
+}
+.menulink_blue:hover{
+	color: #F05559;
+	text-shadow: none;
 }
 
 
@@ -452,10 +489,10 @@ p {
 		#mobilemenuexpand{
 			display: none;
 		}
-		#expanded{
+		.expanded{
 			display: none;
 		}
-		#sub{
+		.sub{
 			display: none;
 		}
 		#exitmobilemenu{
@@ -505,7 +542,7 @@ p {
 			transition-duration:400ms;
 		}
 
-		#mobilemenuexpand > #expanded a:link{
+		#mobilemenuexpand > .expanded a:link{
 			margin-left: 40px;
 			margin-right: 40px;
 			font-family: "Changa One", sans-serif;
@@ -522,29 +559,29 @@ p {
 		    1px 1px 0 #F05559;
 		}
 
-		#mobilemenuexpand > #expanded a:visited{
+		#mobilemenuexpand > .expanded a:visited{
 			color: #e8e8e0;
 			text-decoration: none;
 			text-transform: uppercase;
 		}
 
-		#mobilemenuexpand > #expanded a:active{
+		#mobilemenuexpand > .expanded a:active{
 			color: #e8e8e0;
 			text-decoration: none;
 			text-transform: uppercase;
 		}
 
-		#mobilemenuexpand > #expanded a:hover{
+		#mobilemenuexpand > .expanded a:hover{
 			color: #F05559;
 			text-decoration: none;
 			text-shadow: none;
 		}
 
-		#expanded {
+		.expanded {
 			margin-top: 20px;
 		}
 
-		#sub {
+		.sub {
 			margin-top: 12px;
 			font-family: "Vesper Libre", serif;
 			color: #000;
@@ -553,11 +590,11 @@ p {
 			letter-spacing: 2px;
 			line-height: 16px;
 		}
-		#sub a{
+		.sub a{
 			color: #000;
 			text-decoration: none;
 		}
-		#sub a:hover{
+		.sub a:hover{
 			color: #F05559;
 		}
 
@@ -1342,23 +1379,23 @@ p {
 /*----------------LOGO & ICONS */
 
 #planet{
-	position: absolute;
+	/*position: absolute;
 	display: inline;
 	margin-top: -40px;
 	margin-left: 85%;
-	z-index: 501;
+	z-index: 501;*/
 	transition-property: opacity, margin-left;
     transition-duration: 600ms;
 }
 
 #planet_popup{
-	z-index: 502;
-	position: absolute;
+	/*z-index: 502;
+	position: absolute;*/
 	opacity: 0;
 	transition-property: opacity;
     transition-duration: 600ms;
-    margin-top: -115px;
-	margin-left: 74.5%;
+    /*margin-top: -115px;
+	margin-left: 74.5%;*/
 }
 #planet_popup > span{
 	z-index: 503;
@@ -1378,23 +1415,23 @@ p {
 }
 
 #book{
-	position: absolute;
+	/*position: absolute;
 	display: inline;
 	margin-top: 180px;
 	margin-left: 150%;
-	z-index: 501;
+	z-index: 501;*/
 	transition-property: opacity, margin-left;
     transition-duration: 600ms;
 }
 
 #book_popup{
-	z-index: 502;
-	position: absolute;
+	/*z-index: 502;
+	position: absolute;*/
 	opacity: 0;
 	transition-property: opacity;
     transition-duration: 600ms;
-    margin-top: 30px;
-	margin-left: 68%;
+    /*margin-top: 30px;
+	margin-left: 68%;*/
 }
 #book_popup > span{
 	z-index: 503;
@@ -1414,21 +1451,21 @@ p {
 }
 
 #rainbow{
-	position: absolute;
+	/*position: absolute;
 	display: inline;
 	margin-top: 50px;
 	margin-left: 150%;
-	z-index: 501;
+	z-index: 501;*/
 	transition-property: opacity, margin-left;
     transition-duration: 600ms;
 }
 
 #eye{
-	position: absolute;
+	/*position: absolute;
 	display: inline;
 	margin-top: 50px;
 	margin-left: 150%;
-	z-index: 501;
+	z-index: 501;*/
 	transition-property: opacity, margin-left;
     transition-duration: 600ms;
 }
@@ -2078,6 +2115,118 @@ p {
 			max-width: 300px;
 		}
 	}
+
+
+
+
+
+
+/*-------------------------------*/
+/*-----------------------HIRE ME */
+/*-------------------------------*/
+
+#hireme_placeholder{
+	background-image: url("../images/hireme_placeholder.png");
+	width: 100%;
+	height: 70px;
+}
+
+#hireme{
+	margin: 0;
+	background-color: #E8E8E0;
+	height: 850px;
+}
+
+#hireme_container{
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 100px;
+	background-color: #E8E8E0;
+}
+
+#consulting_tab{
+	background-color: #E8DBD2;
+	font-family: "Vesper Libre", serif;
+	text-transform: uppercase;
+	letter-spacing: 7px;
+	font-size: 14.5pt;
+	color: #F05559;
+	position: absolute;
+	max-width: 190px;
+	margin-top: 110px;
+	padding: 10px 0px 5px 5px;
+	z-index: 1;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg)
+}
+
+#hireme_consulting{
+	background-color: #F05559;
+	width: 50%;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	z-index: 11;
+}
+#hireme_consulting > div{
+	width: 45%;
+	text-align: justify;
+}
+
+#consulting_block1 p:nth-child(1){
+	font-size: 13pt;
+	font-weight: bolder;
+}
+#hashtag{
+	display: inline;
+	float: right;
+	margin-top: -50px;
+	margin-right: 70px;
+}
+
+#consulting_block2 p:nth-child(1){
+	font-size: 13pt;
+	font-weight: bolder;
+}
+#influ_hearts{
+	display: inline;
+	float: right;
+	margin-top: -50px;
+	margin-right: 40px;
+}
+
+#consulting_block3 p:nth-child(1){
+	font-size: 13pt;
+	font-weight: bolder;
+	text-align: left;
+}
+#bell{
+	display: inline;
+	float: right;
+	margin-top: -70px;
+	margin-right: 20px;
+}
+
+#consulting_block4 p:nth-child(1){
+	font-size: 13pt;
+	font-weight: bolder;
+}
+#heart_glasses{
+	display: inline;
+	float: right;
+	margin-top: -50px;
+	margin-right: 10px;
+}
+
+
 
 
 
